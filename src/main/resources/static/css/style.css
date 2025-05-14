@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #FFFFFF;
+    color: #000000;
+    padding: 50px 50px;
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #007BFF;
+}
+.paper-nav-btn button {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Optional: Style for each button */
+.p1-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.p2-btn {
+    background-color: #2196F3; /* Blue */
+    color: white;
+}
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.instructions, .question, .data-sheets {
+    margin: 20px 0;
+}
+
+.instructions p, .question p, .data-sheets p {
+    margin: 10px 0;
+}
+
+.question ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+.question li {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    background: #F5F5F5;
+    color: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button.check-answer {
+    background: #007BFF;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+button.check-answer:hover {
+    background: #0056b3;
+}
+
+.memo {
+    display: none;
+    background: #E9ECEF;
+    padding: 15px;
+    border-left: 4px solid #007BFF;
+    margin: 10px 0;
+}
+
+.memo.show {
+    display: block;
+}
+
+.correct {
+    border: 2px solid #28a745;
+    background: #d4edda;
+}
+
+.incorrect {
+    border: 2px solid #dc3545;
+    background: #f8d7da;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border: 1px solid #000000;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #E9ECEF;
+    font-weight: bold;
+}
+
+.data-sheets table th[colspan="2"] {
+    text-align: center;
+    background: #D3D3D3;
+}
+
+.math {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.math sup, .math sub {
+    font-size: 0.8em;
+}
+
+.options-container {
+    margin: 10px 0;
+}

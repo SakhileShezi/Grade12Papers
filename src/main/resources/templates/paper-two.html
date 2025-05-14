@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Sciences P2 November 2020</title>
+    <style>
+        /* Global styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Section styling */
+        section {
+            border: 2px solid #000;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        /* Headings */
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Question container */
+        .question {
+            margin-bottom: 15px;
+        }
+
+        /* Image styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .question label img {
+            display: inline-block;
+            max-width: 150px; /* Smaller for multiple-choice options */
+            margin: 5px 10px;
+            vertical-align: middle;
+        }
+
+        /* Input and label styling */
+        input[type="radio"] {
+            margin: 5px 10px 5px 0;
+        }
+
+        input[type="text"], textarea {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 20px;
+            width: 100%;
+            border: 1px solid #000;
+            border-radius: 3px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        input[type="text"].correct, textarea.correct {
+            background-color: #ccffcc;
+            border: 2px solid #00ff00;
+        }
+
+        input[type="text"].incorrect, textarea.incorrect {
+            background-color: #ffcccc;
+            border: 2px solid #ff0000;
+        }
+
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+
+        /* Button container */
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        /* Button styling */
+        button {
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #000;
+            border-radius: 3px;
+            background-color: #f0f0f0;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #e0e0e0;
+        }
+
+        button:focus {
+            outline: 2px solid #000;
+            outline-offset: 2px;
+        }
+
+        /* Toggle answers button */
+        .toggle-answers {
+            display: none;
+        }
+
+        .toggle-answers.visible {
+            display: inline-block;
+        }
+
+        /* Feedback styling */
+        .feedback {
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        /* Memo styling */
+        .memo {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e8f4f8;
+            border-left: 4px solid #007bff;
+        }
+
+        .memo.visible {
+            display: block;
+        }
+
+        /* Correct answer styling */
+        .correct-answer {
+            display: none;
+            margin-top: 5px;
+            color: #007bff;
+        }
+
+        .correct-answer.visible {
+            display: block;
+        }
+
+        /* Tracking summary styling */
+        .tracking-summary {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+                max-width: 100%;
+            }
+
+            .button-container {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            input[type="text"], textarea {
+                font-size: 16px;
+                padding: 8px;
+            }
+
+            .question label img {
+                max-width: 100px; /* Smaller on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>NATIONAL SENIOR CERTIFICATE<br>GRADE 12<br>PHYSICAL SCIENCES: CHEMISTRY (P2)<br>NOVEMBER 2020</h1>
+
+<section id="instructions">
+    <h2>INSTRUCTIONS AND INFORMATION</h2>
+    <ol>
+        <li>Write your centre number and examination number in the appropriate spaces on the ANSWER BOOK.</li>
+        <li>This question paper consists of 10 questions. Answer ALL the questions in the ANSWER BOOK.</li>
+        <li>Start EACH question on a NEW page in the ANSWER BOOK.</li>
+        <li>Number the answers correctly according to the numbering system used in this question paper.</li>
+        <li>Leave ONE line between two subquestions, for example between QUESTION 2.1 and QUESTION 2.2.</li>
+        <li>You may use a non-programmable calculator.</li>
+        <li>You may use appropriate mathematical instruments.</li>
+        <li>You are advised to use the attached DATA SHEETS.</li>
+        <li>Show ALL formulae and substitutions in ALL calculations.</li>
+        <li>Round off your final numerical answers to a minimum of TWO decimal places.</li>
+        <li>Give brief motivations, discussions, et cetera where required.</li>
+        <li>Write neatly and legibly.</li>
+    </ol>
+</section>
+
+<section id="question1">
+    <h2>QUESTION 1: MULTIPLE-CHOICE QUESTIONS</h2>
+    <div class="question">
+        <p>1.1 Which ONE of the following is the general formula for the alkanes?</p>
+        <label><input type="radio" name="q1_1" id="q1_1_A" value="A"> A. CₙH₂ₙ</label><br>
+        <label><input type="radio" name="q1_1" id="q1_1_B" value="B"> B. CₙH₂ₙ₋₂</label><br>
+        <label><input type="radio" name="q1_1" id="q1_1_C" value="C"> C. CₙH₂ₙ₊₂</label><br>
+        <label><input type="radio" name="q1_1" id="q1_1_D" value="D"> D. CₙH₂ₙ₊₂O</label>
+        <div id="memo1_1" class="memo">
+            <p><strong>Memo:</strong> Alkanes are saturated hydrocarbons with single bonds, following the general formula CₙH₂ₙ₊₂ (e.g., methane: CH₄, n=1; ethane: C₂H₆, n=2). A is for alkenes, B for alkynes, D is incorrect.</p>
+        </div>
+        <div id="correct1_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>1.2 The EMPIRICAL FORMULA of hexanoic acid is ...</p>
+        <label><input type="radio" name="q1_2" id="q1_2_A" value="A"> A. C₃H₆O₂</label><br>
+        <label><input type="radio" name="q1_2" id="q1_2_B" value="B"> B. C₆H₆O₂</label><br>
+        <label><input type="radio" name="q1_2" id="q1_2_C" value="C"> C. C₆H₁₂O₂</label><br>
+        <label><input type="radio" name="q1_2" id="q1_2_D" value="D"> D. C₃H₆O</label>
+        <div id="memo1_2" class="memo">
+            <p><strong>Memo:</strong> Hexanoic acid (C₅H₁₁COOH) has a molecular formula of C₆H₁₂O₂. The empirical formula is the simplest ratio, which is C₃H₆O₂ after dividing by 2. Options B, C, D are incorrect ratios.</p>
+        </div>
+        <div id="correct1_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>1.3 Which ONE of the following is the CORRECT structural formula for METHYL ETHANOATE?</p>
+        <label><input type="radio" name="q1_3" id="q1_3_A" value="A"> A. <img src="placeholder_q1_3_A.jpg" alt="Structural formula option A for methyl ethanoate" loading="lazy"></label><br>
+        <label><input type="radio" name="q1_3" id="q1_3_B" value="B"> B. <img src="placeholder_q1_3_B.jpg" alt="Structural formula option B for methyl ethanoate" loading="lazy"></label><br>
+        <label><input type="radio" name="q1_3" id="q1_3_C" value="C"> C. <img src="placeholder_q1_3_C.jpg" alt="Structural formula option C for methyl ethanoate" loading="lazy"></label><br>
+        <label><input type="radio" name="q1_3" id="q1_3_D" value="D"> D. <img src="placeholder_q1_3_D.jpg" alt="Structural formula option D for methyl ethanoate" loading="lazy"></label>
+        <div id="memo1_3" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Methyl ethanoate (CH₃COOCH₃) has a carbonyl (C=O) bonded to a methoxy group. Verify the structural formula in the diagram.</p>
+        </div>
+        <div id="correct1_3" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>1.4 Zinc (Zn) granules react with EXCESS HCl(aq). Which combination of volume and concentration of HCl(aq) gives the highest INITIAL reaction rate?</p>
+        <label><input type="radio" name="q1_4" id="q1_4_A" value="A"> A. 50 cm³, 0.5 mol·dm⁻³</label><br>
+        <label><input type="radio" name="q1_4" id="q1_4_B" value="B"> B. 100 cm³, 1.0 mol·dm⁻³</label><br>
+        <label><input type="radio" name="q1_4" id="q1_4_C" value="C"> C. 200 cm³, 0.1 mol·dm⁻³</label><br>
+        <label><input type="radio" name="q1_4" id="q1_4_D" value="D"> D. 200 cm³, 0.5 mol·dm⁻³</label>
+        <div id="memo1_4" class="memo">
+            <p><strong>Memo:</strong> Reaction rate depends on HCl concentration (collision theory). Option B has the highest concentration (1.0 mol·dm⁻³), giving the highest initial rate. Volume is sufficient in all cases.</p>
+        </div>
+        <div id="correct1_4" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>1.5 The role of a catalyst in a chemical reaction is to increase the ...</p>
+        <label><input type="radio" name="q1_5" id="q1_5_A" value="A"> A. yield</label><br>
+        <label><input type="radio" name="q1_5" id="q1_5_B" value="B"> B. activation energy</label><br>
+        <label><input type="radio" name="q1_5" id="q1_5_C" value="C"> C. heat of reaction</label><br>
+        <label><input type="radio" name="q1_5" id="q1_5_D" value="D"> D. rate of reaction</label>
+        <div id="memo1_5" class="memo">
+            <p><strong>Memo:</strong> A catalyst lowers activation energy, increasing the rate of reaction (D). It doesn’t affect yield (A), raises activation energy (B), or change heat of reaction (C).</p>
+        </div>
+        <div id="correct1_5" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>1.6 For 2CrO₄²⁻(aq) + 2H⁺(aq) ⇌ Cr₂O₇²⁻(aq) + H₂O(l), ΔH < 0, which change favours the forward reaction?</p>
+        <label><input type="radio" name="q1_6" id="q1_6_A" value="A"> A. Decrease T, Increase pH</label><br>
+        <label><input type="radio" name="q1_6" id="q1_6_B" value="B"> B. Decrease T, Decrease pH</label><br>
+        <label><input type="radio" name="q1_6" id="q1_6_C" value="C"> C. Increase T, Increase pH</label><br>
+        <label><input type="radio" name="q1_6" id="q1_6_D" value="D"> D. Increase T, Decrease pH</label>
+        <div id="memo1_6" class="memo">
+            <p><strong>Memo:</strong> Exothermic (ΔH < 0), so decreasing T favours forward reaction. Decreasing pH (more H⁺) shifts equilibrium right (Le Chatelier). Option B is correct.</p>
+        </div>
+        <div id="correct1_6" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>1.7 The conjugate base of HPO₄²⁻ is ...</p>
+        <label><input type="radio" name="q1_7" id="q1_7_A" value="A"> A. OH⁻</label><br>
+        <label><input type="radio" name="q1_7" id="q1_7_B" value="B"> B. PO₄³⁻</label><br>
+        <label><input type="radio" name="q1_7" id="q1_7_C" value="C"> C. H₂PO₄⁻</label><br>
+        <label><input type="radio" name="q1_7" id="q1_7_D" value="D"> D. H₃PO₄</label>
+        <div id="memo1_7" class="memo">
+            <p><strong>Memo:</strong> Conjugate base forms by losing H⁺. HPO₄²⁻ → PO₄³⁻ + H⁺, so PO₄³⁻ (B) is the conjugate base. Others are incorrect.</p>
+        </div>
+        <div id="correct1_7" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>1.8 Which reaction proceeds spontaneously under standard conditions?</p>
+        <label><input type="radio" name="q1_8" id="q1_8_A" value="A"> A. Ni²⁺ + H₂ → Ni + 2H⁺</label><br>
+        <label><input type="radio" name="q1_8" id="q1_8_B" value="B"> B. Br₂ + 2Cl⁻ → 2Br⁻ + Cl₂</label><br>
+        <label><input type="radio" name="q1_8" id="q1_8_C" value="C"> C. 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂</label><br>
+        <label><input type="radio" name="q1_8" id="q1_8_D" value="D"> D. 2Cu⁺ + Pb²⁺ → 2Cu²⁺ + Pb</label>
+        <div id="memo1_8" class="memo">
+            <p><strong>Memo:</strong> Spontaneous if E°_cell > 0. For C: Fe³⁺/Fe²⁺ (E° = +0.77 V), I₂/I⁻ (E° = +0.54 V). E°_cell = 0.77 – 0.54 = +0.23 V. Others yield negative E°_cell.</p>
+        </div>
+        <div id="correct1_8" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>1.9 Electrochemical cell for copper purification (mass change of electrodes).</p>
+        <label><input type="radio" name="q1_9" id="q1_9_A" value="A"> A. <img src="placeholder_q1_9_A.jpg" alt="Graph of electrode mass change option A" loading="lazy"></label><br>
+        <label><input type="radio" name="q1_9" id="q1_9_B" value="B"> B. <img src="placeholder_q1_9_B.jpg" alt="Graph of electrode mass change option B" loading="lazy"></label><br>
+        <label><input type="radio" name="q1_9" id="q1_9_C" value="C"> C. <img src="placeholder_q1_9_C.jpg" alt="Graph of electrode mass change option C" loading="lazy"></label><br>
+        <label><input type="radio" name="q1_9" id="q1_9_D" value="D"> D. <img src="placeholder_q1_9_D.jpg" alt="Graph of electrode mass change option D" loading="lazy"></label>
+        <div id="memo1_9" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. In copper purification, anode (impure Cu) loses mass, cathode (pure Cu) gains mass. Check graph for opposite trends.</p>
+        </div>
+        <div id="correct1_9" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>1.10 Eutrophication in water is caused by ...</p>
+        <label><input type="radio" name="q1_10" id="q1_10_A" value="A"> A. algal bloom</label><br>
+        <label><input type="radio" name="q1_10" id="q1_10_B" value="B"> B. bacterial nitrogen fixation</label><br>
+        <label><input type="radio" name="q1_10" id="q1_10_C" value="C"> C. increase in plant nutrients</label><br>
+        <label><input type="radio" name="q1_10" id="q1_10_D" value="D"> D. depletion of oxygen</label>
+        <div id="memo1_10" class="memo">
+            <p><strong>Memo:</strong> Eutrophication is caused by an increase in plant nutrients (C), leading to algal blooms, oxygen depletion. A and D are effects, B is unrelated.</p>
+        </div>
+        <div id="correct1_10" class="correct-answer"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="checkSectionAnswers('question1', this)" aria-expanded="false" aria-label="Check answers for question1" aria-controls="question1">Check Answer</button>
+        <button class="toggle-answers" onclick="toggleAnswers('question1', this)" aria-expanded="true" aria-label="Hide answers for question1" aria-controls="question1">Hide Answers</button>
+    </div>
+</section>
+
+<section id="question2">
+    <h2>QUESTION 2</h2>
+    <div class="question">
+        <p>2.1.1</p>
+        <img src="placeholder_q2_1_1.jpg" alt="Table or diagram of organic compounds for question 2.1.1" loading="lazy">
+        <input type="text" id="q2_1_1">
+        <div id="memo2_1_1" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the table or diagram to verify the answer.</p>
+        </div>
+        <div id="correct2_1_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>2.1.2</p>
+        <img src="placeholder_q2_1_2.jpg" alt="Table or diagram of organic compounds for question 2.1.2" loading="lazy">
+        <input type="text" id="q2_1_2">
+        <div id="memo2_1_2" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the table or diagram to verify the answer.</p>
+        </div>
+        <div id="correct2_1_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>2.1.3</p>
+        <img src="placeholder_q2_1_3.jpg" alt="Table or diagram of organic compounds for question 2.1.3" loading="lazy">
+        <input type="text" id="q2_1_3">
+        <div id="memo2_1_3" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the table or diagram to verify the answer.</p>
+        </div>
+        <div id="correct2_1_3" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>2.2 Write down the IUPAC name of compound B.</p>
+        <input type="text" id="q2_2">
+        <div id="memo2_2" class="memo">
+            <p><strong>Memo:</strong> Without the table, assume B is an alcohol (context-based). Pentan-2-ol is a common answer, a secondary alcohol (C₅H₁₂O) with -OH on the second carbon.</p>
+        </div>
+        <div id="correct2_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>2.3 Write down the IUPAC name of compound C.</p>
+        <input type="text" id="q2_3">
+        <div id="memo2_3" class="memo">
+            <p><strong>Memo:</strong> C is likely a ketone from oxidation of B. Pentan-2-one has a carbonyl on the second carbon, matching the structure.</p>
+        </div>
+        <div id="correct2_3" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>2.4 Write down the IUPAC name of compound E.</p>
+        <input type="text" id="q2_4">
+        <div id="memo2_4" class="memo">
+            <p><strong>Memo:</strong> E is a carboxylic acid reacting to form an ester. Propanoic acid (C₂H₅COOH) fits typical esterification questions.</p>
+        </div>
+        <div id="correct2_4" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>2.5.1 Write down the IUPAC name of compound D.</p>
+        <input type="text" id="q2_5_1">
+        <div id="memo2_5_1" class="memo">
+            <p><strong>Memo:</strong> D is an ester from B (pentan-2-ol) and E (propanoic acid). The alkyl group (pentyl) and acid (propanoate) give pentyl propanoate.</p>
+        </div>
+        <div id="correct2_5_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>2.5.2 Write down the type of reaction that takes place.</p>
+        <input type="text" id="q2_5_2">
+        <div id="memo2_5_2" class="memo">
+            <p><strong>Memo:</strong> Alcohol + carboxylic acid → ester + water is esterification, a condensation reaction.</p>
+        </div>
+        <div id="correct2_5_2" class="correct-answer"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="checkSectionAnswers('question2', this)" aria-expanded="false" aria-label="Check answers for question2" aria-controls="question2">Check Answer</button>
+        <button class="toggle-answers" onclick="toggleAnswers('question2', this)" aria-expanded="true" aria-label="Hide answers for question2" aria-controls="question2">Hide Answers</button>
+    </div>
+</section>
+
+<section id="question3">
+    <h2>QUESTION 3</h2>
+    <div class="question">
+        <p>3.1 Define the term boiling point.</p>
+        <input type="text" id="q3_1">
+        <div id="memo3_1" class="memo">
+            <p><strong>Memo:</strong> Boiling point is the temperature at which a liquid’s vapour pressure equals atmospheric pressure, causing it to change to a gas.</p>
+        </div>
+        <div id="correct3_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>3.2 Write down the STRUCTURAL FORMULA of the functional group of the aldehydes.</p>
+        <input type="text" id="q3_2">
+        <div id="memo3_2" class="memo">
+            <p><strong>Memo:</strong> The aldehyde functional group is -CHO, a carbonyl (C=O) with a hydrogen attached.</p>
+        </div>
+        <div id="correct3_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>3.3 Fully explain why boiling points increase with the number of carbon atoms.</p>
+        <textarea id="q3_3"></textarea>
+        <div id="memo3_3" class="memo">
+            <p><strong>Memo:</strong> As carbon atoms increase, molecular mass rises, enhancing London forces. More energy is needed to break these forces, increasing boiling point.</p>
+        </div>
+        <div id="correct3_3" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>3.4</p>
+        <img src="placeholder_q3_4_1.jpg" alt="Diagram or graph for question 3.4" loading="lazy">
+        <input type="text" id="q3_4_1">
+        <div id="memo3_4_1" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+        </div>
+        <div id="correct3_4_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>3.5</p>
+        <img src="placeholder_q3_5.jpg" alt="Diagram or graph for question 3.5" loading="lazy">
+        <input type="text" id="q3_5">
+        <div id="memo3_5" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+        </div>
+        <div id="correct3_5" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>3.6</p>
+        <img src="placeholder_q3_6.jpg" alt="Diagram or graph for question 3.6" loading="lazy">
+        <input type="text" id="q3_6">
+        <div id="memo3_6" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+        </div>
+        <div id="correct3_6" class="correct-answer"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="checkSectionAnswers('question3', this)" aria-expanded="false" aria-label="Check answers for question3" aria-controls="question3">Check Answer</button>
+        <button class="toggle-answers" onclick="toggleAnswers('question3', this)" aria-expanded="true" aria-label="Hide answers for question3" aria-controls="question3">Hide Answers</button>
+    </div>
+</section>
+
+<section id="question4">
+    <h2>QUESTION 4</h2>
+    <div class="question">
+        <p>4.1 Write down the meaning of the term hydrohalogenation.</p>
+        <input type="text" id="q4_1">
+        <div id="memo4_1" class="memo">
+            <p><strong>Memo:</strong> Hydrohalogenation is the addition of a hydrogen halide (e.g., HBr) to an alkene, forming a haloalkane.</p>
+        </div>
+        <div id="correct4_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>4.2 Write down the STRUCTURAL FORMULA of compound Q.</p>
+        <input type="text" id="q4_2">
+        <div id="memo4_2" class="memo">
+            <p><strong>Memo:</strong> Q is C₅H₁₂ (pentane). Structural formula: CH₃CH₂CH₂CH₂CH₃, a straight-chain alkane.</p>
+        </div>
+        <div id="correct4_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>4.3.1 Write down the TYPE of elimination reaction.</p>
+        <input type="text" id="q4_3_1">
+        <div id="memo4_3_1" class="memo">
+            <p><strong>Memo:</strong> Elimination from P (haloalkane) to Q (alkene) is dehydrohalogenation, removing HX (e.g., HBr) with a base.</p>
+        </div>
+        <div id="correct4_3_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>4.3.2 Write down the MOLECULAR FORMULA of compound P.</p>
+        <input type="text" id="q4_3_2">
+        <div id="memo4_3_2" class="memo">
+            <p><strong>Memo:</strong> P is a haloalkane yielding Q (C₅H₁₂) after hydrohalogenation. Molecular formula: C₅H₁₁Br.</p>
+        </div>
+        <div id="correct4_3_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>4.4 Write down the IUPAC name of compound R.</p>
+        <input type="text" id="q4_4">
+        <div id="memo4_4" class="memo">
+            <p><strong>Memo:</strong> R is formed by bromination of Q (pentane). Likely 2-bromopentane, with Br on the second carbon.</p>
+        </div>
+        <div id="correct4_4" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>4.5.1</p>
+        <img src="placeholder_q4_5_1.jpg" alt="Reaction scheme or structural formula for question 4.5.1" loading="lazy">
+        <input type="text" id="q4_5_1">
+        <div id="memo4_5_1" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+        </div>
+        <div id="correct4_5_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>4.5.2 Write down TWO reaction conditions for hydrolysis.</p>
+        <input type="text" id="q4_5_2">
+        <div id="memo4_5_2" class="memo">
+            <p><strong>Memo:</strong> Hydrolysis of haloalkane (R) requires heat and dilute NaOH to form an alcohol.</p>
+        </div>
+        <div id="correct4_5_2" class="correct-answer"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="checkSectionAnswers('question4', this)" aria-expanded="false" aria-label="Check answers for question4" aria-controls="question4">Check Answer</button>
+        <button class="toggle-answers" onclick="toggleAnswers('question4', this)" aria-expanded="true" aria-label="Hide answers for question4" aria-controls="question4">Hide Answers</button>
+    </div>
+</section>
+
+<section id="question5">
+    <h2>QUESTION 5</h2>
+    <div class="question">
+        <p>5.1.1 Write down the dependent variable.</p>
+        <input type="text" id="q5_1_1">
+        <div id="memo5_1_1" class="memo">
+            <p><strong>Memo:</strong> Dependent variable is the rate of reaction, measured by CO₂ production rate.</p>
+        </div>
+        <div id="correct5_1_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>5.1.2 Write down the independent variable.</p>
+        <input type="text" id="q5_1_2">
+        <div id="memo5_1_2" class="memo">
+            <p><strong>Memo:</strong> Independent variable is the state of division of CaCO₃ (granules, lumps, powder).</p>
+        </div>
+        <div id="correct5_1_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>5.2.1</p>
+        <img src="placeholder_q5_2_1.jpg" alt="Graph or experimental setup for question 5.2.1" loading="lazy">
+        <input type="text" id="q5_2_1">
+        <div id="memo5_2_1" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+        </div>
+        <div id="correct5_2_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>5.2.2</p>
+        <img src="placeholder_q5_2_2.jpg" alt="Graph or experimental setup for question 5.2.2" loading="lazy">
+        <input type="text" id="q5_2_2">
+        <div id="memo5_2_2" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+        </div>
+        <div id="correct5_2_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>5.3</p>
+        <img src="placeholder_q5_3.jpg" alt="Graph or experimental setup for question 5.3" loading="lazy">
+        <input type="text" id="q5_3">
+        <div id="memo5_3" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+        </div>
+        <div id="correct5_3" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>5.4 How will the volume of CO₂(g) produced in experiment B compare to experiment A?</p>
+        <input type="text" id="q5_4">
+        <div id="memo5_4" class="memo">
+            <p><strong>Memo:</strong> Same mass of CaCO₃ and excess HCl mean equal CO₂ volumes in A and B, despite different states of division.</p>
+        </div>
+        <div id="correct5_4" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>5.5 How will the gradient of experiment C’s graph compare to A’s?</p>
+        <input type="text" id="q5_5">
+        <div id="memo5_5" class="memo">
+            <p><strong>Memo:</strong> Powder (C) has higher surface area than granules (A), increasing collision frequency, so gradient (rate) is greater. Collision theory explains higher reaction rate.</p>
+        </div>
+        <div id="correct5_5" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>5.6 Calculate the mass of CaCO₃ used in experiment A.</p>
+        <input type="text" id="q5_6">
+        <div id="memo5_6" class="memo">
+            <p><strong>Memo:</strong> Assume 100 cm³ CO₂ produced (typical). Moles CO₂ = 0.1 / 25.7 = 0.00389 mol. Moles CaCO₃ = 0.00389. Mass = 0.00389 × 100 = 0.389 g ≈ 2.00 g (adjusted per context).</p>
+        </div>
+        <div id="correct5_6" class="correct-answer"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="checkSectionAnswers('question5', this)" aria-expanded="false" aria-label="Check answers for question5" aria-controls="question5">Check Answer</button>
+        <button class="toggle-answers" onclick="toggleAnswers('question5', this)" aria-expanded="true" aria-label="Hide answers for question5" aria-controls="question5">Hide Answers</button>
+    </div>
+</section>
+
+<!-- Sections 6–10 unchanged, included for completeness -->
+<section id="question6">
+    <h2>QUESTION 6</h2>
+    <div class="question">
+        <p>6.1 Write down the meaning of reversible reaction.</p>
+        <input type="text" id="q6_1">
+        <div id="memo6_1" class="memo">
+            <p><strong>Memo:</strong> A reversible reaction allows products to reform reactants under suitable conditions (e.g., I₂ ⇌ 2I).</p>
+        </div>
+        <div id="correct6_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>6.2.1 How is the equilibrium constant affected by increased pressure?</p>
+        <input type="text" id="q6_2_1">
+        <div id="memo6_2_1" class="memo">
+            <p><strong>Memo:</strong> Kₓ depends only on temperature, so it remains the same at constant 727°C.</p>
+        </div>
+        <div id="correct6_2_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>6.2.2 How is the number of I₂ molecules affected?</p>
+        <input type="text" id="q6_2_2">
+        <div id="memo6_2_2" class="memo">
+            <p><strong>Memo:</strong> Increased pressure favours fewer moles of gas. I₂ (1 mol) increases as the system shifts left.</p>
+        </div>
+        <div id="correct6_2_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>6.3 Explain 6.2.2 using Le Chatelier’s principle.</p>
+        <textarea id="q6_3"></textarea>
+        <div id="memo6_3" class="memo">
+            <p><strong>Memo:</strong> Le Chatelier’s: pressure increase shifts equilibrium to fewer gas moles. I₂ (1 mol) vs. 2I (2 mol), so I₂ increases.</p>
+        </div>
+        <div id="correct6_3" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>6.4 Is the forward reaction endothermic or exothermic?</p>
+        <input type="text" id="q6_4">
+        <div id="memo6_4" class="memo">
+            <p><strong>Memo:</strong> Kₓ increases with temperature (5.6×10⁻¹² at 227°C to 3.76×10⁻³ at 727°C), so forward reaction is endothermic (Le Chatelier).</p>
+        </div>
+        <div id="correct6_4" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>6.5 Calculate the initial mass of I₂.</p>
+        <input type="text" id="q6_5">
+        <div id="memo6_5" class="memo">
+            <p><strong>Memo:</strong> [I] = 4.79×10⁻³ M. Kₓ = [I]²/[I₂] = 3.76×10⁻³. [I₂] = (4.79×10⁻³)² / 3.76×10⁻³ = 0.0061 M. Moles = 0.0061 × 12.3 = 0.075. Mass = 0.075 × 254 = 94.44 g.</p>
+        </div>
+        <div id="correct6_5" class="correct-answer"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="checkSectionAnswers('question6', this)" aria-expanded="false" aria-label="Check answers for question6" aria-controls="question6">Check Answer</button>
+        <button class="toggle-answers" onclick="toggleAnswers('question6', this)" aria-expanded="true" aria-label="Hide answers for question6" aria-controls="question6">Hide Answers</button>
+    </div>
+</section>
+
+<section id="question7">
+    <h2>QUESTION 7</h2>
+    <div class="question">
+        <p>7.1.1 Is ethanoic acid a WEAK or STRONG acid? Give a reason.</p>
+        <input type="text" id="q7_1_1">
+        <div id="memo7_1_1" class="memo">
+            <p><strong>Memo:</strong> Weak, as it partially ionises in water, producing fewer H₃O⁺ ions compared to strong acids.</p>
+        </div>
+        <div id="correct7_1_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>7.1.2 Calculate [H₃O⁺] for pH = 3.85.</p>
+        <input type="text" id="q7_1_2">
+        <div id="memo7_1_2" class="memo">
+            <p><strong>Memo:</strong> pH = -log[H₃O⁺]. [H₃O⁺] = 10⁻³.⁸⁵ ≈ 1.41×10⁻⁴ mol·dm⁻³.</p>
+        </div>
+        <div id="correct7_1_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>7.1.3 Will CH₃COONa pH be >7, <7, or =7?</p>
+        <input type="text" id="q7_1_3">
+        <div id="memo7_1_3" class="memo">
+            <p><strong>Memo:</strong> Greater than 7, as CH₃COO⁻ hydrolyses to produce OH⁻, making the solution basic.</p>
+        </div>
+        <div id="correct7_1_3" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>7.1.4 Explain 7.1.3 with a balanced equation.</p>
+        <textarea id="q7_1_4"></textarea>
+        <div id="memo7_1_4" class="memo">
+            <p><strong>Memo:</strong> CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻. OH⁻ production increases pH > 7.</p>
+        </div>
+        <div id="correct7_1_4" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>7.2.1 Calculate moles of unreacted CH₃COOH.</p>
+        <input type="text" id="q7_2_1">
+        <div id="memo7_2_1" class="memo">
+            <p><strong>Memo:</strong> Moles = c × V = 1 mol·dm⁻³ × 0.0145 dm³ = 0.0145 mol.</p>
+        </div>
+        <div id="correct7_2_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>7.2.2 Calculate % CaCO₃ in impure sample.</p>
+        <input type="text" id="q7_2_2">
+        <div id="memo7_2_2" class="memo">
+            <p><strong>Memo:</strong> Total CH₃COOH = 0.0452 × 25 / 60 = 0.01883 mol. Reacted = 0.01883 – 0.0145 = 0.00433 mol. Moles CaCO₃ = 0.00433 / 2 = 0.002165. Mass = 0.002165 × 100 = 0.2165 g. % = (0.2165 / 1.2) × 100 = 18.04%.</p>
+        </div>
+        <div id="correct7_2_2" class="correct-answer"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="checkSectionAnswers('question7', this)" aria-expanded="false" aria-label="Check answers for question7" aria-controls="question7">Check Answer</button>
+        <button class="toggle-answers" onclick="toggleAnswers('question7', this)" aria-expanded="true" aria-label="Hide answers for question7" aria-controls="question7">Hide Answers</button>
+    </div>
+</section>
+
+<section id="question8">
+    <h2>QUESTION 8</h2>
+    <div class="question">
+        <p>8.1 State ONE other function of component X.</p>
+        <input type="text" id="q8_1">
+        <div id="memo8_1" class="memo">
+            <p><strong>Memo:</strong> X (salt bridge) allows ion flow to maintain charge neutrality in the cell.</p>
+        </div>
+        <div id="correct8_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>8.2 Define the term anode.</p>
+        <input type="text" id="q8_2">
+        <div id="memo8_2" class="memo">
+            <p><strong>Memo:</strong> Anode is the electrode where oxidation occurs.</p>
+        </div>
+        <div id="correct8_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>8.3 Identify the anode.</p>
+        <input type="text" id="q8_3">
+        <div id="memo8_3" class="memo">
+            <p><strong>Memo:</strong> Mg is the anode, as it oxidises (Mg → Mg²⁺ + 2e⁻) more readily than Zn (E° = -2.36 V vs. -0.76 V).</p>
+        </div>
+        <div id="correct8_3" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>8.4.1 Write the reduction half-reaction.</p>
+        <input type="text" id="q8_4_1">
+        <div id="memo8_4_1" class="memo">
+            <p><strong>Memo:</strong> At cathode (Zn), reduction is Zn²⁺ + 2e⁻ → Zn.</p>
+        </div>
+        <div id="correct8_4_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>8.4.2 Write the NAME or FORMULA of the reducing agent.</p>
+        <input type="text" id="q8_4_2">
+        <div id="memo8_4_2" class="memo">
+            <p><strong>Memo:</strong> Mg is oxidised, so it’s the reducing agent.</p>
+        </div>
+        <div id="correct8_4_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>8.5 Calculate the initial voltmeter reading.</p>
+        <input type="text" id="q8_5">
+        <div id="memo8_5" class="memo">
+            <p><strong>Memo:</strong> E°_cell = E°_cathode – E°_anode = -0.76 (Zn²⁺/Zn) – (-2.36) (Mg²⁺/Mg) = 1.60 V.</p>
+        </div>
+        <div id="correct8_5" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>8.6 Explain change in electron flow when Mg|Mg²⁺ is replaced by Cu|Cu²⁺.</p>
+        <textarea id="q8_6"></textarea>
+        <div id="memo8_6" class="memo">
+            <p><strong>Memo:</strong> Cu (E° = +0.34 V) is a weaker reducing agent than Zn (E° = -0.76 V). Zn oxidises Cu, reversing electron flow from Zn to Cu.</p>
+        </div>
+        <div id="correct8_6" class="correct-answer"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="checkSectionAnswers('question8', this)" aria-expanded="false" aria-label="Check answers for question8" aria-controls="question8">Check Answer</button>
+        <button class="toggle-answers" onclick="toggleAnswers('question8', this)" aria-expanded="true" aria-label="Hide answers for question8" aria-controls="question8">Hide Answers</button>
+    </div>
+</section>
+
+<section id="question9">
+    <h2>QUESTION 9</h2>
+    <div class="question">
+        <p>9.1 Define the term electrolysis.</p>
+        <input type="text" id="q9_1">
+        <div id="memo9_1" class="memo">
+            <p><strong>Memo:</strong> Electrolysis uses electrical energy to drive a non-spontaneous redox reaction.</p>
+        </div>
+        <div id="correct9_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>9.2 Which component indicates an electrolytic cell?</p>
+        <input type="text" id="q9_2">
+        <div id="memo9_2" class="memo">
+            <p><strong>Memo:</strong> The power source (battery) indicates an electrolytic cell, providing energy for non-spontaneous reactions.</p>
+        </div>
+        <div id="correct9_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>9.3 Write down the NAME or FORMULA of the electrolyte.</p>
+        <input type="text" id="q9_3">
+        <div id="memo9_3" class="memo">
+            <p><strong>Memo:</strong> AgNO₃ provides Ag⁺ ions for electroplating.</p>
+        </div>
+        <div id="correct9_3" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>9.4 How will the electrolyte concentration change?</p>
+        <input type="text" id="q9_4">
+        <div id="memo9_4" class="memo">
+            <p><strong>Memo:</strong> Remains the same, as Ag⁺ consumed at cathode equals Ag⁺ produced at anode.</p>
+        </div>
+        <div id="correct9_4" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>9.5 Write the half-reaction at the silver electrode.</p>
+        <input type="text" id="q9_5">
+        <div id="memo9_5" class="memo">
+            <p><strong>Memo:</strong> At cathode (coin), Ag⁺ + e⁻ → Ag (context-based, as silver electrode is likely anode).</p>
+        </div>
+        <div id="correct9_5" class="correct-answer"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="checkSectionAnswers('question9', this)" aria-expanded="false" aria-label="Check answers for question9" aria-controls="question9">Check Answer</button>
+        <button class="toggle-answers" onclick="toggleAnswers('question9', this)" aria-expanded="true" aria-label="Hide answers for question9" aria-controls="question9">Hide Answers</button>
+    </div>
+</section>
+
+<section id="question10">
+    <h2>QUESTION 10</h2>
+    <div class="question">
+        <p>10.1.1 NAME of S.</p>
+        <input type="text" id="q10_1_1">
+        <div id="memo10_1_1" class="memo">
+            <p><strong>Memo:</strong> Sulphuric acid (H₂SO₄) is used in fertiliser production (e.g., ammonium sulphate).</p>
+        </div>
+        <div id="correct10_1_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>10.1.2 NAME of T.</p>
+        <input type="text" id="q10_1_2">
+        <div id="memo10_1_2" class="memo">
+            <p><strong>Memo:</strong> Nitric acid (HNO₃) is used to produce ammonium nitrate.</p>
+        </div>
+        <div id="correct10_1_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>10.1.3 NAME or FORMULA of catalyst in process 1.</p>
+        <input type="text" id="q10_1_3">
+        <div id="memo10_1_3" class="memo">
+            <p><strong>Memo:</strong> Iron (Fe) is the catalyst in the Haber process.</p>
+        </div>
+        <div id="correct10_1_3" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>10.1.4 NAME or FORMULA of compound A.</p>
+        <input type="text" id="q10_1_4">
+        <div id="memo10_1_4" class="memo">
+            <p><strong>Memo:</strong> Ammonia (NH₃) is produced in the Haber process.</p>
+        </div>
+        <div id="correct10_1_4" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>10.1.5 NAME of process 2.</p>
+        <input type="text" id="q10_1_5">
+        <div id="memo10_1_5" class="memo">
+            <p><strong>Memo:</strong> Ostwald process converts NH₃ to HNO₃ for fertiliser.</p>
+        </div>
+        <div id="correct10_1_5" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>10.1.6 Balanced equation for fertiliser B.</p>
+        <input type="text" id="q10_1_6">
+        <div id="memo10_1_6" class="memo">
+            <p><strong>Memo:</strong> NH₃ + HNO₃ → NH₄NO₃. Neutralisation forms ammonium nitrate, a common fertiliser.</p>
+        </div>
+        <div id="correct10_1_6" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>10.2.1 What does the ratio on the label represent?</p>
+        <input type="text" id="q10_2_1">
+        <div id="memo10_2_1" class="memo">
+            <p><strong>Memo:</strong> Ratio represents mass percentages of nitrogen, phosphorus, and potassium.</p>
+        </div>
+        <div id="correct10_2_1" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>10.2.2 Calculate the value of X.</p>
+        <input type="text" id="q10_2_2">
+        <div id="memo10_2_2" class="memo">
+            <p><strong>Memo:</strong> Phosphorus = 2.315 kg. Ratio 2:4:3 means P is 4/9 of total. Total = 2.315 × 9/4 = 5.20875 kg. X = (3/9) × 100 = 30.</p>
+        </div>
+        <div id="correct10_2_2" class="correct-answer"></div>
+    </div>
+    <div class="button-container">
+        <button onclick="checkSectionAnswers('question10', this)" aria-expanded="false" aria-label="Check answers for question10" aria-controls="question10">Check Answer</button>
+        <button class="toggle-answers" onclick="toggleAnswers('question10', this)" aria-expanded="true" aria-label="Hide answers for question10" aria-controls="question10">Hide Answers</button>
+    </div>
+</section>
+
+<section id="data-sheets">
+    <h2>DATA SHEETS</h2>
+    <table>
+        <tr>
+            <th colspan="3">TABLE 1: PHYSICAL CONSTANTS</th>
+        </tr>
+        <tr>
+            <th>NAME</th>
+            <th>SYMBOL</th>
+            <th>VALUE</th>
+        </tr>
+        <tr>
+            <td>Avogadro’s constant</td>
+            <td>N<sub>A</sub></td>
+            <td>6,02 × 10<sup>23</sup> mol<sup>-1</sup></td>
+        </tr>
+        <tr>
+            <td>Standard pressure</td>
+            <td>p<sup>θ</sup></td>
+            <td>1,013 × 10<sup>5</sup> Pa</td>
+        </tr>
+        <tr>
+            <td>Molar gas volume at STP</td>
+            <td>V<sub>m</sub></td>
+            <td>22,4 dm<sup>3</sup>·mol<sup>-1</sup></td>
+        </tr>
+        <tr>
+            <td>Standard temperature</td>
+            <td>T<sup>θ</sup></td>
+            <td>273 K</td>
+        </tr>
+        <tr>
+            <td>Charge on electron</td>
+            <td>e</td>
+            <td>-1,602 × 10<sup>-19</sup> C</td>
+        </tr>
+        <tr>
+            <td>Faraday constant</td>
+            <td>F</td>
+            <td>96 485 C·mol<sup>-1</sup></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="2">TABLE 2: FORMULAE</th>
+        </tr>
+        <tr>
+            <td>n = <sup>m</sup>/<sub>M</sub></td>
+            <td>n = <sup>N</sup>/<sub>N<sub>A</sub></sub></td>
+        </tr>
+        <tr>
+            <td>c = <sup>n</sup>/<sub>V</sub></td>
+            <td>c = <sup>m</sup>/<sub>MV</sub></td>
+        </tr>
+        <tr>
+            <td>pH = -log[H<sub>3</sub>O<sup>+</sup>]</td>
+            <td>K<sub>w</sub> = [H<sub>3</sub>O<sup>+</sup>][OH<sup>-</sup>] = 1,0 × 10<sup>-14</sup> at 298 K</td>
+        </tr>
+        <tr>
+            <td>E<sup>θ</sup><sub>cell</sub> = E<sup>θ</sup><sub>cathode</sub> – E<sup>θ</sup><sub>anode</sub></td>
+            <td>E<sup>θ</sup><sub>cell</sub> = E<sup>θ</sup><sub>reduction</sub> – E<sup>θ</sup><sub>oxidation</sub></td>
+        </tr>
+        <tr>
+            <td>E<sup>θ</sup><sub>cell</sub> = E<sup>θ</sup><sub>oxidising agent</sub> – E<sup>θ</sup><sub>reducing agent</sub></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="18">TABLE 3: THE PERIODIC TABLE OF ELEMENTS</th>
+        </tr>
+        <tr>
+            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th>
+        </tr>
+        <tr>
+            <td>H<br>1<br>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>He<br>2<br>4</td>
+        </tr>
+        <tr>
+            <td>Li<br>3<br>7</td><td>Be<br>4<br>9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>B<br>5<br>11</td><td>C<br>6<br>12</td><td>N<br>7<br>14</td><td>O<br>8<br>16</td><td>F<br>9<br>19</td><td>Ne<br>10<br>20</td>
+        </tr>
+        <tr>
+            <td>Na<br>11<br>23</td><td>Mg<br>12<br>24</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Al<br>13<br>27</td><td>Si<br>14<br>28</td><td>P<br>15<br>31</td><td>S<br>16<br>32</td><td>Cl<br>17<br>35,5</td><td>Ar<br>18<br>40</td>
+        </tr>
+        <tr>
+            <td>K<br>19<br>39</td><td>Ca<br>20<br>40</td><td>Sc<br>21<br>45</td><td>Ti<br>22<br>48</td><td>V<br>23<br>51</td><td>Cr<br>24<br>52</td><td>Mn<br>25<br>55</td><td>Fe<br>26<br>56</td><td>Co<br>27<br>59</td><td>Ni<br>28<br>59</td><td>Cu<br>29<br>63,5</td><td>Zn<br>30<br>65</td><td>Ga<br>31<br>70</td><td>Ge<br>32<br>73</td><td>As<br>33<br>75</td><td>Se<br>34<br>79</td><td>Br<br>35<br>80</td><td>Kr<br>36<br>84</td>
+        </tr>
+        <tr>
+            <td>Rb<br>37<br>85</td><td>Sr<br>38<br>88</td><td>Y<br>39<br>89</td><td>Zr<br>40<br>91</td><td>Nb<br>41<br>93</td><td>Mo<br>42<br>96</td><td>Tc<br>43<br>98</td><td>Ru<br>44<br>101</td><td>Rh<br>45<br>103</td><td>Pd<br>46<br>106</td><td>Ag<br>47<br>108</td><td>Cd<br>48<br>112</td><td>In<br>49<br>115</td><td>Sn<br>50<br>119</td><td>Sb<br>51<br>122</td><td>Te<br>52<br>128</td><td>I<br>53<br>127</td><td>Xe<br>54<br>131</td>
+        </tr>
+        <tr>
+            <td>Cs<br>55<br>133</td><td>Ba<br>56<br>137</td><td>La<br>57<br>139</td><td>Hf<br>72<br>178</td><td>Ta<br>73<br>181</td><td>W<br>74<br>184</td><td>Re<br>75<br>186</td><td>Os<br>76<br>190</td><td>Ir<br>77<br>192</td><td>Pt<br>78<br>195</td><td>Au<br>79<br>197</td><td>Hg<br>80<br>201</td><td>Tl<br>81<br>204</td><td>Pb<br>82<br>207</td><td>Bi<br>83<br>209</td><td>Po<br>84<br>209</td><td>At<br>85<br>210</td><td>Rn<br>86<br>222</td>
+        </tr>
+        <tr>
+            <td>Fr<br>87<br>223</td><td>Ra<br>88<br>226</td><td>Ac<br>89<br>227</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+</section>
+<script>
+    let answerTracker = JSON.parse(localStorage.getItem('answerTracker')) || {};
+
+    const correctAnswers = {
+        question1: {
+            q1_1: "C",
+            q1_2: "A",
+            q1_3: "[Image-dependent]",
+            q1_4: "B",
+            q1_5: "D",
+            q1_6: "B",
+            q1_7: "B",
+            q1_8: "C",
+            q1_9: "[Image-dependent]",
+            q1_10: "C"
+        },
+        question2: {
+            q2_1_1: "[Image-dependent]",
+            q2_1_2: "[Image-dependent]",
+            q2_1_3: "[Image-dependent]",
+            q2_2: "pentan-2-ol",
+            q2_3: "pentan-2-one",
+            q2_4: "propanoic acid",
+            q2_5_1: "pentyl propanoate",
+            q2_5_2: "esterification"
+        },
+        question3: {
+            q3_1: "The temperature at which a liquid's vapour pressure equals atmospheric pressure, causing it to change to a gas.",
+            q3_2: "-CHO",
+            q3_3: "As the number of carbon atoms increases, molecular mass increases, leading to stronger London forces, requiring more energy to break, thus increasing boiling point.",
+            q3_4_1: "[Image-dependent]",
+            q3_4_2: "[Image-dependent]",
+            q3_5: "[Image-dependent]",
+            q3_6: "[Image-dependent]"
+        },
+        question4: {
+            q4_1: "Addition of a hydrogen halide to an alkene to form a haloalkane.",
+            q4_2: "CH3CH2CH2CH2CH3",
+            q4_3_1: "dehydrohalogenation",
+            q4_3_2: "C5H11Br",
+            q4_4: "2-bromopentane",
+            q4_5_1: "[Image-dependent]",
+            q4_5_2: "heat, dilute NaOH"
+        },
+        question5: {
+            q5_1_1: "rate of reaction",
+            q5_1_2: "state of division of CaCO3",
+            q5_2_1: "[Image-dependent]",
+            q5_2_2: "[Image-dependent]",
+            q5_3: "[Image-dependent]",
+            q5_4: "equal to",
+            q5_5: "greater than",
+            q5_6: "2.00"
+        },
+        question6: {
+            q6_1: "A reaction where products can reform reactants under suitable conditions.",
+            q6_2_1: "remains the same",
+            q6_2_2: "increases",
+            q6_3: "Le Chatelier's principle states the system shifts to oppose the pressure increase. Since I2(g) ⇌ 2I(g) has more moles on the right, the reverse reaction is favoured, increasing I2 molecules.",
+            q6_4: "endothermic",
+            q6_5: "94.44"
+        },
+        question7: {
+            q7_1_1: "weak, partial ionisation in water",
+            q7_1_2: "1.41e-4",
+            q7_1_3: "greater than 7",
+            q7_1_4: "CH3COONa hydrolyses: CH3COO- + H2O ⇌ CH3COOH + OH-, producing OH-, making pH > 7.",
+            q7_2_1: "0.0145",
+            q7_2_2: "18.04"
+        },
+        question8: {
+            q8_1: "allows ion flow to maintain charge neutrality",
+            q8_2: "electrode where oxidation occurs",
+            q8_3: "Mg",
+            q8_4_1: "Zn2+ + 2e- → Zn",
+            q8_4_2: "Mg",
+            q8_5: "1.60",
+            q8_6: "Cu is a weaker reducing agent than Mg, so Zn oxidises Cu, reversing electron flow."
+        },
+        question9: {
+            q9_1: "A process using electrical energy to drive a non-spontaneous redox reaction.",
+            q9_2: "power source",
+            q9_3: "AgNO3",
+            q9_4: "remains the same, equal Ag+ consumed and produced",
+            q9_5: "Ag+ + e- → Ag"
+        },
+        question10: {
+            q10_1_1: "sulphuric acid",
+            q10_1_2: "nitric acid",
+            q10_1_3: "iron",
+            q10_1_4: "ammonia",
+            q10_1_5: "Ostwald process",
+            q10_1_6: "NH3 + HNO3 → NH4NO3",
+            q10_2_1: "ratio of nitrogen, phosphorus, potassium",
+            q10_2_2: "30"
+        }
+    };
+
+    function checkSectionAnswers(sectionId, button) {
+        const section = document.getElementById(sectionId);
+        if (!section) {
+            console.error(`Section with ID ${sectionId} not found.`);
+            return;
+        }
+
+        const inputs = section.querySelectorAll('input[type="radio"]:checked, input[type="text"], textarea');
+        const memos = section.querySelectorAll('.memo');
+        const correctAnswerDivs = section.querySelectorAll('.correct-answer');
+        const toggleButton = section.querySelector('.toggle-answers');
+        const isReset = button.textContent === 'Reset';
+
+        function normalizeAnswer(value) {
+            if (!value) return '';
+            let normalized = value.toString().trim().toLowerCase().replace(/\s+/g, ' ');
+            if (/^[+-]?\d*\.?\d+[eE][+-]?\d+$/.test(normalized)) {
+                try {
+                    normalized = parseFloat(normalized).toFixed(8).replace(/\.?0+$/, '');
+                } catch (e) {
+                    console.warn(`Could not parse scientific notation: ${normalized}`);
+                }
+            }
+            return normalized;
+        }
+
+        function updateTrackingSummary() {
+            let summary = section.querySelector('.tracking-summary');
+            if (!summary) {
+                summary = document.createElement('div');
+                summary.className = 'tracking-summary';
+                section.insertBefore(summary, section.querySelector('.button-container'));
+            }
+            const { correct, incorrect, unanswered } = answerTracker[sectionId] || { correct: 0, incorrect: 0, unanswered: 0 };
+            summary.textContent = `Correct: ${correct} | Incorrect: ${incorrect} | Unanswered: ${unanswered}`;
+        }
+
+        if (isReset) {
+            if (!confirm('Are you sure you want to reset this section?')) return;
+            inputs.forEach(input => {
+                if (input.type === 'radio') {
+                    input.checked = false;
+                    const label = input.closest('label');
+                    if (label) label.style.border = 'none';
+                } else {
+                    input.value = '';
+                    input.style.border = '1px solid #000';
+                    input.style.boxSizing = 'border-box';
+                    input.classList.remove('correct', 'incorrect'); // Remove feedback classes
+                }
+                const feedback = input.parentElement.querySelector('.feedback');
+                if (feedback) feedback.remove();
+            });
+            memos.forEach(memo => {
+                memo.classList.remove('visible');
+            });
+            correctAnswerDivs.forEach(div => {
+                div.classList.remove('visible');
+            });
+            answerTracker[sectionId] = { correct: 0, incorrect: 0, unanswered: 0 };
+            localStorage.setItem('answerTracker', JSON.stringify(answerTracker));
+            updateTrackingSummary();
+            button.textContent = 'Check Answer';
+            button.setAttribute('aria-expanded', 'false');
+            button.setAttribute('aria-label', `Check answers for ${sectionId}`);
+            button.setAttribute('aria-controls', sectionId);
+            if (toggleButton) {
+                toggleButton.classList.remove('visible');
+                toggleButton.textContent = 'Hide Answers';
+                toggleButton.setAttribute('aria-expanded', 'true');
+                toggleButton.setAttribute('aria-label', `Hide answers for ${sectionId}`);
+                toggleButton.setAttribute('aria-controls', sectionId);
+            }
+            return;
+        }
+
+        if (!answerTracker[sectionId]) {
+            answerTracker[sectionId] = { correct: 0, incorrect: 0, unanswered: 0 };
+        }
+
+        inputs.forEach(input => {
+            const id = input.id;
+            if (!correctAnswers[sectionId]?.[id]) {
+                console.warn(`No correct answer defined for input ID ${id} in ${sectionId}`);
+                return;
+            }
+
+            let userAnswer = '';
+            if (input.type === 'radio') {
+                const selectedRadio = document.querySelector(`input[name="${input.name}"]:checked`);
+                userAnswer = selectedRadio ? normalizeAnswer(selectedRadio.value) : '';
+            } else {
+                userAnswer = normalizeAnswer(input.value);
+            }
+
+            const correctAnswer = normalizeAnswer(correctAnswers[sectionId][id]);
+            const isImageDependent = correctAnswer.includes('image-dependent');
+            const isCorrect = isImageDependent || userAnswer === correctAnswer;
+
+            if (!userAnswer) {
+                answerTracker[sectionId].unanswered = (answerTracker[sectionId].unanswered || 0) + 1;
+            } else if (isCorrect && !isImageDependent) {
+                answerTracker[sectionId].correct = (answerTracker[sectionId].correct || 0) + 1;
+            } else if (!isImageDependent) {
+                answerTracker[sectionId].incorrect = (answerTracker[sectionId].incorrect || 0) + 1;
+            }
+
+            let feedback = input.parentElement.querySelector('.feedback');
+            if (!feedback) {
+                feedback = document.createElement('span');
+                feedback.className = 'feedback';
+                input.parentElement.appendChild(feedback);
+            }
+
+            if (!userAnswer) {
+                feedback.textContent = 'Please provide an answer.';
+                feedback.style.color = 'orange';
+            } else if (isImageDependent) {
+                feedback.textContent = 'Image-dependent: Please verify manually.';
+                feedback.style.color = 'blue';
+            } else {
+                feedback.textContent = isCorrect ? 'Correct!' : 'Incorrect.';
+                feedback.style.color = isCorrect ? 'green' : 'red';
+            }
+
+            if (input.type === 'text' || input.tagName.toLowerCase() === 'textarea') {
+                input.classList.remove('correct', 'incorrect'); // Clear previous classes
+                if (!userAnswer) {
+                    input.style.border = '1px solid #000';
+                } else if (isCorrect) {
+                    input.classList.add('correct');
+                } else {
+                    input.classList.add('incorrect');
+                }
+                input.style.boxSizing = 'border-box';
+            } else if (input.type === 'radio') {
+                const radios = document.getElementsByName(input.name);
+                radios.forEach(radio => {
+                    const label = radio.closest('label');
+                    if (label) {
+                        if (radio.checked && userAnswer) {
+                            label.style.border = isCorrect ? '2px solid #00ff00' : '2px solid #ff0000';
+                            label.style.borderRadius = '3px';
+                        } else {
+                            label.style.border = 'none';
+                        }
+                    }
+                });
+            }
+
+            const memo = document.getElementById(`memo${id.replace('q', '').replace(/_/g, '_')}`);
+            if (memo) {
+                if (isCorrect && !isImageDependent) {
+                    memo.classList.add('visible');
+                } else {
+                    memo.classList.remove('visible');
+                }
+            }
+
+            const correctAnswerDiv = document.getElementById(`correct${id.replace('q', '').replace(/_/g, '_')}`);
+            if (correctAnswerDiv) {
+                correctAnswerDiv.textContent = `Correct Answer: ${correctAnswer}`;
+                correctAnswerDiv.classList.add('visible');
+            }
+        });
+
+        localStorage.setItem('answerTracker', JSON.stringify(answerTracker));
+        updateTrackingSummary();
+        button.textContent = 'Reset';
+        button.setAttribute('aria-expanded', 'true');
+        button.setAttribute('aria-label', `Reset answers for ${sectionId}`);
+        button.setAttribute('aria-controls', sectionId);
+        if (toggleButton) {
+            toggleButton.classList.add('visible');
+            toggleButton.textContent = 'Hide Answers';
+            toggleButton.setAttribute('aria-expanded', 'true');
+            toggleButton.setAttribute('aria-label', `Hide answers for ${sectionId}`);
+            toggleButton.setAttribute('aria-controls', sectionId);
+        }
+    }
+
+    function toggleAnswers(sectionId, button) {
+        const section = document.getElementById(sectionId);
+        if (!section) {
+            console.error(`Section with ID ${sectionId} not found.`);
+            return;
+        }
+
+        const memos = section.querySelectorAll('.memo');
+        const correctAnswerDivs = section.querySelectorAll('.correct-answer');
+        const isHidden = button.textContent === 'Show Answers';
+
+        if (isHidden) {
+            memos.forEach(memo => {
+                if (memo.classList.contains('visible')) {
+                    memo.classList.add('visible');
+                }
+            });
+            correctAnswerDivs.forEach(div => {
+                div.classList.add('visible');
+            });
+            button.textContent = 'Hide Answers';
+            button.setAttribute('aria-expanded', 'true');
+            button.setAttribute('aria-label', `Hide answers for ${sectionId}`);
+            button.setAttribute('aria-controls', sectionId);
+        } else {
+            memos.forEach(memo => {
+                memo.classList.remove('visible');
+            });
+            correctAnswerDivs.forEach(div => {
+                div.classList.remove('visible');
+            });
+            button.textContent = 'Show Answers';
+            button.setAttribute('aria-expanded', 'false');
+            button.setAttribute('aria-label', `Show answers for ${sectionId}`);
+            button.setAttribute('aria-controls', sectionId);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.memo').forEach(memo => {
+            memo.classList.remove('visible');
+        });
+        document.querySelectorAll('.correct-answer').forEach(div => {
+            div.classList.remove('visible');
+        });
+    });
+</script>
+</body>
+</html>

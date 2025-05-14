@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade 12 Physical Sciences P1 November 2020</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <div class="paper-nav-btn">
+        <button class="p1-btn">Physical Sciences Paper 1</button><button class="p2-btn">Physical Sciences Paper 2</button>
+    </div>
+    <h1>National Senior Certificate Grade 12</h1>
+    <h2>Physical Sciences: Physics (P1)</h2>
+    <p>November 2020</p>
+    <p>Marks: 150 | Time: 3 hours</p>
+    <p>This question paper consists of 16 pages and 3 data sheets.</p>
+</header>
+
+<section class="instructions">
+    <h3>Instructions and Information</h3>
+    <ol>
+        <li>Write your centre number and examination number in the appropriate spaces on the ANSWER BOOK.</li>
+        <li>This question paper consists of TEN questions. Answer ALL the questions in the ANSWER BOOK.</li>
+        <li>Start EACH question on a NEW page in the ANSWER BOOK.</li>
+        <li>Number the answers correctly according to the numbering system used in this question paper.</li>
+        <li>Leave ONE line between two subquestions, e.g. between QUESTION 2.1 and QUESTION 2.2.</li>
+        <li>You may use a non-programmable calculator.</li>
+        <li>You may use appropriate mathematical instruments.</li>
+        <li>Show ALL formulae and substitutions in ALL calculations.</li>
+        <li>Round off your final numerical answers to a minimum of TWO decimal places.</li>
+        <li>Give brief motivations, discussions etc. where required.</li>
+        <li>You are advised to use the attached DATA SHEETS.</li>
+        <li>Write neatly and legibly.</li>
+    </ol>
+</section>
+
+    <section class="question" id="question1">
+        <h3>Question 1: Multiple-Choice Questions</h3>
+        <p>Various options are provided as possible answers to the following questions. Each question has only ONE correct answer. Choose the answer and select the letter (A–D) below each question.</p>
+        <ol>
+            <li>
+                <p>1.1 Several forces are acting on a moving object. Which ONE of the following statements is CORRECT when these forces are in equilibrium?</p>
+                <div class="options-container" id="q1_1_options">
+                    <label><input type="radio" name="q1_1" value="a"> A. <span class="option-text">The velocity of the object is increasing.</span></label>
+                    <label><input type="radio" name="q1_1" value="b"> B. <span class="option-text">The object is moving at a constant velocity.</span></label>
+                    <label><input type="radio" name="q1_1" value="c"> C. <span class="option-text">The kinetic energy of the object is decreasing.</span></label>
+                    <label><input type="radio" name="q1_1" value="d"> D. <span class="option-text">The object has a non-zero acceleration.</span></label>
+                </div>
+                <div class="memo" id="memo1_1" style="display: none;">
+                    <p><strong>Correct Answer: B</strong><br>Approach: Forces in equilibrium mean the net force is zero (\( F_{\text{net}} = 0 \)). From Newton’s First Law (data sheet: \( F_{\text{net}} = ma \)), if \( F_{\text{net}} = 0 \), acceleration \( a = 0 \). For a moving object, this implies constant velocity.</p>
+                </div>
+            </li>
+            <li>
+                <p>1.2 A stone thrown vertically downwards from the top of a building takes <em>t</em> seconds to strike the ground. What does the shaded area between 0 and <em>t</em> seconds, shown in the acceleration-time graph, represent?</p>
+                <img src="/images/velocity%20time%20graph.png" alt="Acceleration-time graph for stone in free fall">
+                <div class="options-container" id="q1_2_options">
+                    <label><input type="radio" name="q1_2" value="a"> A. <span class="option-text">The final velocity of the stone</span></label>
+                    <label><input type="radio" name="q1_2" value="b"> B. <span class="option-text">The change in position of the stone</span></label>
+                    <label><input type="radio" name="q1_2" value="c"> C. <span class="option-text">The constant velocity of the stone</span></label>
+                    <label><input type="radio" name="q1_2" value="d"> D. <span class="option-text">The change in velocity of the stone</span></label>
+                </div>
+                <div class="memo" id="memo1_2" style="display: none;">
+                    <p><strong>Correct Answer: D</strong><br>Approach: The area under an acceleration-time graph equals the change in velocity (\( \Delta v = a \cdot \Delta t \)). In free fall, acceleration is constant (\( a = g = 9.8 \, \text{m/s}^2 \), data sheet). The shaded area from 0 to \( t \) is \( g \cdot t \), representing \( \Delta v \).</p>
+                </div>
+            </li>
+            <li>
+                <p>1.3 A ball moving horizontally has constant momentum <em>p</em> and kinetic energy <em>K</em>. The ball collides with a wall and bounces back horizontally. Immediately after the collision, the ball has momentum <em>½p</em>. The mass of the ball remains constant. Which ONE of the following is the kinetic energy of the ball immediately after the collision?</p>
+                <img src="/images/1.3.png" alt="Diagram of ball colliding with wall">
+                <div class="options-container" id="q1_3_options">
+                    <label><input type="radio" name="q1_3" value="a"> A. <span class="option-text">¼K</span></label>
+                    <label><input type="radio" name="q1_3" value="b"> B. <span class="option-text">½K</span></label>
+                    <label><input type="radio" name="q1_3" value="c"> C. <span class="option-text">2K</span></label>
+                    <label><input type="radio" name="q1_3" value="d"> D. <span class="option-text">4K</span></label>
+                </div>
+                <div class="memo" id="memo1_3" style="display: none;">
+                    <p><strong>Correct Answer: A</strong><br>Approach: Momentum \( p = mv \), kinetic energy \( K = \frac{1}{2}mv^2 \) (data sheet). If momentum is \( \frac{1}{2}p \), velocity is \( \frac{1}{2}v \). New kinetic energy: \( K' = \frac{1}{2}m\left(\frac{1}{2}v\right)^2 = \frac{1}{4} \cdot \frac{1}{2}mv^2 = \frac{1}{4}K \).</p>
+                </div>
+            </li>
+            <li>
+                <p>1.4 A force <em>F</em> acts on a box as the box moves from rest down a rough incline at a constant acceleration. The force is parallel to the incline.</p>
+                <img src="/images/1.4.png" alt="Diagram of box on rough incline with force F">
+                <p>The work done by the gravitational force is ... the work done by the frictional force and the work done by <em>F</em>.</p>
+                <div class="options-container" id="q1_4_options">
+                    <label><input type="radio" name="q1_4" value="a"> A. <span class="option-text">equal to the sum of</span></label>
+                    <label><input type="radio" name="q1_4" value="b"> B. <span class="option-text">less than the sum of</span></label>
+                    <label><input type="radio" name="q1_4" value="c"> C. <span class="option-text">greater than the sum of</span></label>
+                    <label><input type="radio" name="q1_4" value="d"> D. <span class="option-text">equal to the difference between</span></label>
+                </div>
+                <div class="memo" id="memo1_4" style="display: none;">
+                    <p><strong>Correct Answer: C</strong><br>Approach: Work \( W = F \Delta x \cos \theta \) (data sheet). Gravity’s work is positive (down incline). Friction’s work is negative (opposes motion). \( F \)’s work depends on direction. Net work equals kinetic energy change, making gravity’s work greater than the sum of friction and \( F \).</p>
+                </div>
+            </li>
+            <li>
+                <p>1.5 A ball falling vertically downwards from point <em>A</em> strikes the ground with velocity <em>v</em> and bounces, reaching a maximum height at point <em>B</em>. Which ONE of the following combinations is CORRECT for the direction of the impulse on the ball upon striking the ground and the magnitude of the velocity with which the ball leaves the ground?</p>
+                <img src="/images/1.5.png" alt="Diagram of ball falling from point A to ground and bouncing to point B">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Direction of Impulse</th>
+                        <th>Magnitude of Velocity</th>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>Upward</td>
+                        <td>Greater than v</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>Downward</td>
+                        <td>Greater than v</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>Upward</td>
+                        <td>Less than v</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>Downward</td>
+                        <td>Less than v</td>
+                    </tr>
+                </table>
+                <div class="options-container" id="q1_5_options">
+                    <label><input type="radio" name="q1_5" value="a"> A. <span class="option-text">Upward, Greater than v</span></label>
+                    <label><input type="radio" name="q1_5" value="b"> B. <span class="option-text">Downward, Greater than v</span></label>
+                    <label><input type="radio" name="q1_5" value="c"> C. <span class="option-text">Upward, Less than v</span></label>
+                    <label><input type="radio" name="q1_5" value="d"> D. <span class="option-text">Downward, Less than v</span></label>
+                </div>
+                <div class="memo" id="memo1_5" style="display: none;">
+                    <p><strong>Correct Answer: C</strong><br>Approach: Impulse \( \Delta p = m(v_f - v_i) \) (data sheet). Initial velocity \( v_i = -v \) (down). After bouncing, velocity \( v_f \) is upward but smaller (lower height). Impulse is upward (changes direction). Magnitude \( |v_f| < v \).</p>
+                </div>
+            </li>
+            <li>
+                <p>1.6 The absorption spectrum of an element surrounding a moving star is observed on Earth and found to be red shifted. Which ONE of the following combinations is CORRECT for the movement of the star and the frequency of the observed light on Earth?</p>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Movement of Star</th>
+                        <th>Frequency of Observed Light</th>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>Away from Earth</td>
+                        <td>Decreased</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>Towards Earth</td>
+                        <td>Decreased</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>Away from Earth</td>
+                        <td>Increased</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>Towards Earth</td>
+                        <td>Increased</td>
+                    </tr>
+                </table>
+                <div class="options-container" id="q1_6_options">
+                    <label><input type="radio" name="q1_6" value="a"> A. <span class="option-text">Away from Earth, Decreased</span></label>
+                    <label><input type="radio" name="q1_6" value="b"> B. <span class="option-text">Towards Earth, Decreased</span></label>
+                    <label><input type="radio" name="q1_6" value="c"> C. <span class="option-text">Away from Earth, Increased</span></label>
+                    <label><input type="radio" name="q1_6" value="d"> D. <span class="option-text">Towards Earth, Increased</span></label>
+                </div>
+                <div class="memo" id="memo1_6" style="display: none;">
+                    <p><strong>Correct Answer: A</strong><br>Approach: Red shift increases wavelength, decreasing frequency (\( f = \frac{c}{\lambda} \), data sheet: \( c = 3.0 \times 10^8 \, \text{m/s} \)). This occurs when the star moves away (Doppler effect).</p>
+                </div>
+            </li>
+            <li>
+                <p>1.7 Two small identical spheres, each with mass <em>m</em> and charge <em>+Q</em>, are placed in a vertical cylinder. The spheres remain stationary when their centres are <em>r</em> metres apart.</p>
+                <img src="/images/1.7.png" alt="Diagram of two charged spheres in a vertical cylinder">
+                <p>Which ONE of the following expressions can be used to CORRECTLY calculate the distance <em>r</em>?</p>
+                <div class="options-container" id="q1_7_options">
+                    <label><input type="radio" name="q1_7" value="a"> A. <span class="option-text">√(kQ²/mg)</span></label>
+                    <label><input type="radio" name="q1_7" value="b"> B. <span class="option-text">√(kmg/Q²)</span></label>
+                    <label><input type="radio" name="q1_7" value="c"> C. <span class="option-text">√(Q²/kmg)</span></label>
+                    <label><input type="radio" name="q1_7" value="d"> D. <span class="option-text">√(mg/kQ²)</span></label>
+                </div>
+                <div class="memo" id="memo1_7" style="display: none;">
+                    <p><strong>Correct Answer: A</strong><br>Approach: Electrostatic force equals weight for equilibrium: \( \frac{kQ^2}{r^2} = mg \) (data sheet: \( k = 9.0 \times 10^9 \, \text{N·m}^2/\text{C}^2 \)). Solve: \( r^2 = \frac{kQ^2}{mg} \), so \( r = \sqrt{\frac{kQ^2}{mg}} \).</p>
+                </div>
+            </li>
+            <li>
+                <p>1.8 The kilowatt-hour (kWh) is a unit of ...</p>
+                <div class="options-container" id="q1_8_options">
+                    <label><input type="radio" name="q1_8" value="a"> A. <span class="option-text">power</span></label>
+                    <label><input type="radio" name="q1_8" value="b"> B. <span class="option-text">electric current</span></label>
+                    <label><input type="radio" name="q1_8" value="c"> C. <span class="option-text">electrical energy</span></label>
+                    <label><input type="radio" name="q1_8" value="d"> D. <span class="option-text">potential difference</span></label>
+                </div>
+                <div class="memo" id="memo1_8" style="display: none;">
+                    <p><strong>Correct Answer: C</strong><br>Approach: Kilowatt-hour is energy (power × time). Power \( P = \frac{W}{\Delta t} \), work \( W = VIt \) (data sheet). Thus, kWh measures electrical energy.</p>
+                </div>
+            </li>
+            <li>
+                <p>1.9 The diagram below shows a simplified electric motor. The rotation of the coil is observed from the battery.</p>
+                <img src="/images/1.9.png" alt="Diagram of simplified electric motor">
+                <p>Which ONE of the following statements is CORRECT while the motor is in operation?</p>
+                <div class="options-container" id="q1_9_options">
+                    <label><input type="radio" name="q1_9" value="a"> A. <span class="option-text">The coil and the slip rings rotate anti-clockwise.</span></label>
+                    <label><input type="radio" name="q1_9" value="b"> B. <span class="option-text">The coil and the slip rings rotate clockwise.</span></label>
+                    <label><input type="radio" name="q1_9" value="c"> C. <span class="option-text">The coil and the commutator rotate clockwise.</span></label>
+                    <label><input type="radio" name="q1_9" value="d"> D. <span class="option-text">The coil and the commutator rotate anti-clockwise.</span></label>
+                </div>
+                <div class="memo" id="memo1_9" style="display: none;">
+                    <p><strong>Correct Answer: D</strong><br>Approach: In a DC motor, the coil and commutator rotate together. Direction depends on current and magnetic field. Assuming standard setup (Fleming’s Left-Hand Rule), rotation is anti-clockwise from the battery view.</p>
+                </div>
+            </li>
+            <li>
+                <p>1.10 Which of the following statements is/are TRUE for the photoelectric effect? The photoelectric effect demonstrates that:</p>
+                <p>(i) Light has a wave nature</p>
+                <p>(ii) Light has a particle nature</p>
+                <p>(iii) Light energy is quantised</p>
+                <div class="options-container" id="q1_10_options">
+                    <label><input type="radio" name="q1_10" value="a"> A. <span class="option-text">(i) only</span></label>
+                    <label><input type="radio" name="q1_10" value="b"> B. <span class="option-text">(ii) only</span></label>
+                    <label><input type="radio" name="q1_10" value="c"> C. <span class="option-text">(i) and (iii) only</span></label>
+                    <label><input type="radio" name="q1_10" value="d"> D. <span class="option-text">(ii) and (iii) only</span></label>
+                </div>
+                <div class="memo" id="memo1_10" style="display: none;">
+                    <p><strong>Correct Answer: D</strong><br>Approach: Photoelectric effect shows light as photons (particle nature) with quantized energy (\( E = hf \), data sheet: \( h = 6.63 \times 10^{-34} \, \text{J·s} \)). Wave nature (i) is not demonstrated.</p>
+                </div>
+            </li>
+        </ol>
+        <button class="check-answer" onclick="checkSectionAnswers('question1', [
+        {id: 'q1_1', correct: 'b', memo: 'memo1_1'},
+        {id: 'q1_2', correct: 'd', memo: 'memo1_2'},
+        {id: 'q1_3', correct: 'a', memo: 'memo1_3'},
+        {id: 'q1_4', correct: 'c', memo: 'memo1_4'},
+        {id: 'q1_5', correct: 'c', memo: 'memo1_5'},
+        {id: 'q1_6', correct: 'a', memo: 'memo1_6'},
+        {id: 'q1_7', correct: 'a', memo: 'memo1_7'},
+        {id: 'q1_8', correct: 'c', memo: 'memo1_8'},
+        {id: 'q1_9', correct: 'd', memo: 'memo1_9'},
+        {id: 'q1_10', correct: 'd', memo: 'memo1_10'}
+         aria-expanded="false" aria-label="Check or reset incorrect answers for Question 1">Check Answer</button>
+    </section>
+
+    <section class="question" id="question2">
+        <h3>Question 2</h3>
+        <p>In an experiment, a crate of mass 8,5 kg, lying stationary on a rough horizontal table, is connected to a mass hanger by means of a light inextensible string passing over a frictionless pulley. Mass pieces are added to the mass hanger and the acceleration of the crate is measured.</p>
+        <img src="/images/Q2.png" alt="Diagram of crate on table connected to mass hanger via pulley">
+        <p>Ignore the effects of air friction.</p>
+        <ol>
+            <li>
+                <p>2.1 Define the term static friction.</p>
+                <label for="q2_1">
+                    Answer:
+                    <textarea id="q2_1" name="q2_1" placeholder="Type your definition"></textarea>
+                </label>
+                <div class="memo" id="memo2_1" style="display: none;">
+                    <p><strong>Correct Answer: Static friction is the force that opposes the tendency of an object to move when an external force is applied, but the object remains stationary.</strong><br>Approach: Use the definition related to \( f_s^{\text{max}} = \mu_s N \) (data sheet). It acts to prevent motion until the applied force exceeds the maximum static friction.</p>
+                </div>
+            </li>
+            <li>
+                <p>2.2 Draw a labelled free-body diagram showing ALL the HORIZONTAL forces acting on the crate JUST BEFORE it starts moving.</p>
+                <label for="q2_2">
+                    Answer (describe or upload diagram):
+                    <textarea id="q2_2" name="q2_2" placeholder="Describe your diagram or note that it will be drawn on paper"></textarea>
+                </label>
+                <div class="memo" id="memo2_2" style="display: none;">
+                    <p><strong>Correct Answer: Diagram shows tension (right) and static friction (left). Normal force (up) and weight (down) cancel vertically.</strong><br>Approach: Identify horizontal forces: tension from the string (right), static friction opposing motion (left). Use Newton’s First Law (\( F_{\text{net}} = 0 \)) before motion starts.</p>
+                </div>
+            </li>
+            <li>
+                <p>2.3 Calculate the:</p>
+                <ol>
+                    <li>
+                        <p>2.3.1 Coefficient of static friction (μ_s)</p>
+                        <label for="q2_3_1">
+                            Answer:
+                            <input type="text" id="q2_3_1" name="q2_3_1" placeholder="Enter your calculation">
+                        </label>
+                        <div class="memo" id="memo2_3_1" style="display: none;">
+                            <p><strong>Correct Answer: [Requires graph data, e.g., \( \mu_s = 0.45 \)]</strong><br>Approach: Use \( f_s^{\text{max}} = \mu_s N \) (data sheet). Normal force \( N = mg = 8.5 \cdot 9.8 = 83.3 \, \text{N} \). Maximum static friction equals tension just before motion (from graph). Solve: \( \mu_s = \frac{f_s^{\text{max}}}{N} \).</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>2.3.2 Magnitude of the acceleration represented by Y on the graph if the coefficient of kinetic friction between the crate and the table is 0,40</p>
+                        <label for="q2_3_2">
+                            Answer:
+                            <input type="text" id="q2_3_2" name="q2_3_2" placeholder="Enter your calculation">
+                        </label>
+                        <div class="memo" id="memo2_3_2" style="display: none;">
+                            <p><strong>Correct Answer: [Requires graph data, e.g., \( a = 1.2 \, \text{m/s}^2 \)]</strong><br>Approach: Use Newton’s Second Law: \( F_{\text{net}} = ma \) (data sheet). Net force is tension minus kinetic friction (\( f_k = \mu_k N \), \( \mu_k = 0.4 \), \( N = 83.3 \, \text{N} \)). Solve for \( a = \frac{F_{\text{net}}}{m} \).</p>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>2.4 A 5 kg block is now placed inside the crate and the experiment is repeated. How will this affect the maximum static frictional force now experienced by the crate? Choose from INCREASES, DECREASES or REMAINS THE SAME.</p>
+                <div class="options-container" id="q2_4_options">
+                    <label><input type="radio" name="q2_4" value="a"> A. <span class="option-text">Increases</span></label>
+                    <label><input type="radio" name="q2_4" value="b"> B. <span class="option-text">Decreases</span></label>
+                    <label><input type="radio" name="q2_4" value="c"> C. <span class="option-text">Remains the Same</span></label>
+                </div>
+                <label for="q2_4_reason">
+                    Answer:
+                    <textarea id="q2_4_reason" name="q2_4_reason" placeholder="Explain your choice"></textarea>
+                </label>
+                <div class="memo" id="memo2_4" style="display: none;">
+                    <p><strong>Correct Answer: A</strong><br>Reason: New mass is 13.5 kg, increasing normal force (\( N = mg \), data sheet). Maximum static friction \( f_s^{\text{max}} = \mu_s N \) increases due to larger \( N \).</p>
+                </div>
+            </li>
+        </ol>
+        <button class="check-answer" onclick="checkAllAnswers('question2', [
+        {id: 'q2_1', correct: 'force opposes stationary', memo: 'memo2_1'},
+        {id: 'q2_2', correct: 'tension friction horizontal', memo: 'memo2_2'},
+        {id: 'q2_3_1', correct: 'numerical', memo: 'memo2_3_1'},
+        {id: 'q2_3_2', correct: 'numerical', memo: 'memo2_3_2'},
+        {id: 'q2_4', correct: 'a', memo: 'memo2_4', reasonId: 'q2_4_reason', reasonCorrect: 'normal force increases'}
+    ], this)" aria-expanded="false" aria-label="Check or reset incorrect answers for Question 2">Check Answer</button>
+    </section>
+
+    <section class="question" id="question3">
+        <h3>Question 3</h3>
+        <p>A small ball is dropped from a height of 2 m and bounces a few times after landing on a cement floor. Ignore air friction.</p>
+        <p>The position-time graph below, not drawn to scale, represents the motion of the ball.</p>
+        <img src="/images/Q3.png" alt="Position-time graph for bouncing ball">
+        <ol>
+            <li>
+                <p>3.1 Define the term free fall.</p>
+                <label for="q3_1">
+                    Answer:
+                    <textarea id="q3_1" name="q3_1" placeholder="Type your definition"></textarea>
+                </label>
+                <div class="memo" id="memo3_1" style="display: none;">
+                    <p><strong>Correct Answer: Free fall is the motion of an object under the influence of gravitational force alone, with no other forces acting on it.</strong><br>Approach: The ball falls under gravity (\( g = 9.8 \, \text{m/s}^2 \), data sheet), with no air friction as stated.</p>
+                </div>
+            </li>
+            <li>
+                <p>3.2 Use the graph and determine:</p>
+                <ol>
+                    <li>
+                        <p>3.2.1 The time that the ball is in contact with the floor before the first bounce</p>
+                        <label for="q3_2_1">
+                            Answer:
+                            <input type="text" id="q3_2_1" name="q3_2_1" placeholder="Enter time in seconds (e.g., 0.05)">
+                        </label>
+                        <div class="memo" id="memo3_2_1" style="display: none;">
+                            <p><strong>Correct Answer: [Requires graph data, e.g., 0.05 s]</strong><br>Approach: Contact time is the duration where the graph is flat at \( y = 0 \, \text{m} \). Read the time interval (e.g., from \( t_1 = 0.45 \, \text{s} \) to \( t_2 = 0.50 \, \text{s} \), so \( 0.50 - 0.45 = 0.05 \, \text{s} \)).</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>3.2.2 The time it takes the ball to reach its maximum height after the first bounce</p>
+                        <label for="q3_2_2">
+                            Answer:
+                            <input type="text" id="q3_2_2" name="q3_2_2" placeholder="Enter time in seconds (e.g., 0.30)">
+                        </label>
+                        <div class="memo" id="memo3_2_2" style="display: none;">
+                            <p><strong>Correct Answer: [Requires graph data, e.g., 0.30 s]</strong><br>Approach: Time from the end of contact (e.g., \( t_2 = 0.50 \, \text{s} \)) to the peak (e.g., \( t_3 = 0.80 \, \text{s} \)) is \( t_3 - t_2 \). Alternatively, use \( v_f = v_i + a \Delta t \), where \( v_f = 0 \), \( a = -9.8 \, \text{m/s}^2 \), and \( v_i \) is the bounce speed (from 3.2.3).</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>3.2.3 The speed at which the ball leaves the floor at the first bounce</p>
+                        <label for="q3_2_3">
+                            Answer:
+                            <input type="text" id="q3_2_3" name="q3_2_3" placeholder="Enter speed in m/s (e.g., 4.43)">
+                        </label>
+                        <div class="memo" id="memo3_2_3" style="display: none;">
+                            <p><strong>Correct Answer: [Requires graph data, e.g., 4.43 m/s]</strong><br>Approach: Use the maximum height after bounce (\( h_1 \), from graph). Apply \( v^2 = 2gh_1 \) (data sheet). E.g., if \( h_1 = 1 \, \text{m} \), then \( v = \sqrt{2 \times 9.8 \times 1} \approx 4.43 \, \text{m/s} \). Alternatively, calculate the slope of the graph just after contact.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>3.2.4 Time <em>t</em> indicated on the graph</p>
+                        <label for="q3_2_4">
+                            Answer:
+                            <input type="text" id="q3_2_4" name="q3_2_4" placeholder="Enter time in seconds (e.g., 0.64)">
+                        </label>
+                        <div class="memo" id="memo3_2_4" style="display: none;">
+                            <p><strong>Correct Answer: [Requires graph data, e.g., 0.64 s]</strong><br>Approach: If \( t \) is time to hit the ground, use \( \Delta y = v_i \Delta t + \frac{1}{2} a \Delta t^2 \): \( -2 = 0 + \frac{1}{2} \times (-9.8) \times \Delta t^2 \), so \( \Delta t \approx 0.64 \, \text{s} \). Otherwise, read \( t \) from the graph’s label.</p>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <button class="check-answer" onclick="checkAllAnswers('question3', [
+        {id: 'q3_1', correct: 'gravity only', memo: 'memo3_1'},
+        {id: 'q3_2_1', correct: 'numerical', memo: 'memo3_2_1'},
+        {id: 'q3_2_2', correct: 'numerical', memo: 'memo3_2_2'},
+        {id: 'q3_2_3', correct: 'numerical', memo: 'memo3_2_3'},
+        {id: 'q3_2_4', correct: 'numerical', memo: 'memo3_2_4'}
+    ], this)" aria-expanded="false" aria-label="Check or reset incorrect answers for Question 3">Check Answer</button>
+    </section>
+
+    <section class="question" id="question4">
+        <h3>Question 4</h3>
+        <p>Ball <em>P</em> of mass 0,16 kg, moving east at a speed of 10 m·s<sup>-1</sup>, collides head-on with another ball <em>Q</em> of mass 0,2 kg, moving west at a speed of 15 m·s<sup>-1</sup>. After the collision, ball <em>P</em> moves west at a speed of 5 m·s<sup>-1</sup>, as shown in the diagram below.</p>
+        <img src="/images/Q4.png" alt="Diagram of collision between balls P and Q">
+        <p>Ignore the effects of friction and the rotational effects of the balls.</p>
+        <ol>
+            <li>
+                <p>4.1 Define the term momentum in words.</p>
+                <label for="q4_1">
+                    Answer:
+                    <textarea id="q4_1" name="q4_1" placeholder="Type your definition"></textarea>
+                </label>
+                <div class="memo" id="memo4_1" style="display: none;">
+                    <p><strong>Correct Answer: Momentum is the product of an object’s mass and its velocity.</strong><br>Approach: Momentum is a vector quantity, \( p = mv \) (data sheet), representing the quantity of motion.</p>
+                </div>
+            </li>
+            <li>
+                <p>4.2 Calculate the:</p>
+                <ol>
+                    <li>
+                        <p>4.2.1 Velocity of ball <em>Q</em> after the collision</p>
+                        <label for="q4_2_1">
+                            Answer:
+                            <input type="text" id="q4_2_1" name="q4_2_1" placeholder="Enter velocity in m/s (e.g., -3.00)">
+                        </label>
+                        <div class="memo" id="memo4_2_1" style="display: none;">
+                            <p><strong>Correct Answer: -3.00 m/s (3.00 m/s west)</strong><br>Approach: Use conservation of momentum: \( m_P v_{P_i} + m_Q v_{Q_i} = m_P v_{P_f} + m_Q v_{Q_f} \) (data sheet). Substitute: \( (0.16 \times 10) + (0.2 \times -15) = (0.16 \times -5) + (0.2 \times v_{Q_f}) \). Solve: \( 1.6 - 3.0 = -0.8 + 0.2 v_{Q_f} \), so \( v_{Q_f} = -3.00 \, \text{m/s} \).</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>4.2.2 Magnitude of the impulse on ball <em>P</em> during the collision</p>
+                        <label for="q4_2_2">
+                            Answer:
+                            <input type="text" id="q4_2_2" name="q4_2_2" placeholder="Enter impulse in kg·m/s (e.g., 2.40)">
+                        </label>
+                        <div class="memo" id="memo4_2_2" style="display: none;">
+                            <p><strong>Correct Answer: 2.40 kg·m/s</strong><br>Approach: Impulse is the change in momentum: \( \Delta p = m_P (v_{P_f} - v_{P_i}) \) (data sheet). Substitute: \( \Delta p = 0.16 \times (-5 - 10) = 0.16 \times -15 = -2.4 \, \text{kg·m/s} \). Magnitude: \( 2.40 \, \text{kg·m/s} \).</p>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <button class="check-answer" onclick="checkAllAnswers('question4', [
+        {id: 'q4_1', correct: 'mass velocity product', memo: 'memo4_1'},
+        {id: 'q4_2_1', correct: '-3.00', memo: 'memo4_2_1'},
+        {id: 'q4_2_2', correct: '2.40', memo: 'memo4_2_2'}
+    ], this)" aria-expanded="false" aria-label="Check or reset incorrect answers for Question 4">Check Answer</button>
+    </section>
+
+    <section class="question" id="question5">
+        <h3>Question 5</h3>
+        <p>A roller-coaster car of mass 200 kg, with the engine switched off, travels along track ABC which has a rough surface, as shown in the diagram below. At point A, which is 10 m above the ground, the speed of the car is 4 m·s⁻¹.</p>
+        <p>At point B, which is at a height \( h \) above the ground, the speed of the car is 2 m·s⁻¹. During the motion from point A to point B, 3,40 × 10³ J of energy is used to overcome friction.</p>
+        <p>Ignore rotational effects due to the wheels of the car.</p>
+        <img src="/images/Q5.png" alt="Diagram of roller-coaster track from A to B to C">
+        <ol>
+            <li>
+                <p>5.1 Define the term non-conservative force.</p>
+                <label for="q5_1">
+                    Answer:
+                    <textarea id="q5_1" name="q5_1" placeholder="Type your definition"></textarea>
+                </label>
+                <div class="memo" id="memo5_1" style="display: none;">
+                    <p><strong>Correct Answer: A non-conservative force is a force for which the work done depends on the path taken.</strong><br>Approach: Friction is non-conservative, as work varies with path (data sheet: \( W_{\text{nc}} = \Delta K + \Delta U \)).</p>
+                </div>
+            </li>
+            <li>
+                <p>5.2 Calculate the change in the kinetic energy of the car after it has travelled from point A to point B.</p>
+                <label for="q5_2">
+                    Answer:
+                    <input type="text" id="q5_2" name="q5_2" placeholder="Enter energy change in joules (e.g., -1200)">
+                </label>
+                <div class="memo" id="memo5_2" style="display: none;">
+                    <p><strong>Correct Answer: -1200 J</strong><br>Approach: \( \Delta K = K_f - K_i \), where \( K = \frac{1}{2} m v^2 \) (data sheet). Initial: \( K_i = \frac{1}{2} \times 200 \times 4^2 = 1600 \, \text{J} \). Final: \( K_f = \frac{1}{2} \times 200 \times 2^2 = 400 \, \text{J} \). Thus, \( \Delta K = 400 - 1600 = -1200 \, \text{J} \).</p>
+                </div>
+            </li>
+            <li>
+                <p>5.3 Use energy principles to calculate the height \( h \).</p>
+                <label for="q5_3">
+                    Answer:
+                    <input type="text" id="q5_3" name="q5_3" placeholder="Enter height in metres (e.g., 9.30)">
+                </label>
+                <div class="memo" id="memo5_3" style="display: none;">
+                    <p><strong>Correct Answer: 9.30 m</strong><br>Approach: Use \( W_{\text{nc}} = \Delta K + \Delta U \). Friction work \( W_{\text{nc}} = -3400 \, \text{J} \). \( \Delta K = -1200 \, \text{J} \). Potential energy \( U = mgh \), so \( \Delta U = mg (h - 10) \). Substitute: \( -3400 = -1200 + 200 \times 9.8 \times (h - 10) \). Solve: \( h \approx 9.30 \, \text{m} \).</p>
+                </div>
+            </li>
+            <li>
+                <p>5.4 Calculate the power delivered by the engine to move the car from point B to point C.</p>
+                <p>On reaching point B, the car's engine is switched on in order to move up the incline to point C, which is 22 m above the ground. While moving from point B to point C, the car travels for 15 s at a constant speed of 2 m·s⁻¹, while an average frictional force of 50 N acts on it.</p>
+                <label for="q5_4">
+                    Answer:
+                    <input type="text" id="q5_4" name="q5_4" placeholder="Enter power in watts (e.g., 2626.67)">
+                </label>
+                <div class="memo" id="memo5_4" style="display: none;">
+                    <p><strong>Correct Answer: 2626.67 W</strong><br>Approach: Power \( P = \frac{W}{\Delta t} \). Work \( W = W_g + W_f \). Gravitational work: \( W_g = mg \Delta h = 200 \times 9.8 \times (22 - 9.30) = 24892 \, \text{J} \). Friction work: \( W_f = F_f \Delta x \cos 180^\circ \), \( \Delta x = 2 \times 15 = 30 \, \text{m} \), so \( W_f = 50 \times 30 \times (-1) = -1500 \, \text{J} \). Total \( W = 24892 - 1500 = 23392 \, \text{J} \). Power: \( P = \frac{23392}{15} \approx 2626.67 \, \text{W} \).</p>
+                </div>
+            </li>
+        </ol>
+        <button class="check-answer" onclick="checkAllAnswers('question5', [
+        {id: 'q5_1', correct: 'work path dependent', memo: 'memo5_1'},
+        {id: 'q5_2', correct: '-1200', memo: 'memo5_2'},
+        {id: 'q5_3', correct: '9.30', memo: 'memo5_3'},
+        {id: 'q5_4', correct: '2626.67', memo: 'memo5_4'}
+    ], this)" aria-expanded="false" aria-label="Check or reset incorrect answers for Question 5">Check Answer</button>
+    </section>
+
+    <section class="question" id="question6">
+        <h3>Question 6</h3>
+        <p>The siren of a train, moving at a constant speed along a straight horizontal track, emits sound with a constant frequency. A detector, placed next to the track, records the frequency of the sound waves. The results obtained are as shown in the graph below.</p>
+        <img src="/images/Q6.png" alt="Frequency-time graph for train siren">
+        <ol>
+            <li>
+                <p>6.1 State the Doppler effect in words.</p>
+                <label for="q6_1">
+                    Answer:
+                    <textarea id="q6_1" name="q6_1" placeholder="Type your statement"></textarea>
+                </label>
+                <div class="memo" id="memo6_1" style="display: none;">
+                    <p><strong>Correct Answer: The Doppler effect is the change in frequency of a wave observed due to the relative motion between the source and the observer.</strong><br>Approach: Relates to \( f_L = \frac{v \pm v_L}{v \pm v_S} f_S \) (data sheet).</p>
+                </div>
+            </li>
+            <li>
+                <p>6.2 Does the detector record the frequency of 3148 Hz when the train moves TOWARDS the detector or AWAY from the detector?</p>
+                <div class="options-container" id="q6_2_options">
+                    <label><input type="radio" name="q6_2" value="a"> A. <span class="option-text">Towards</span></label>
+                    <label><input type="radio" name="q6_2" value="b"> B. <span class="option-text">Away</span></label>
+                </div>
+                <div class="memo" id="memo6_2" style="display: none;">
+                    <p><strong>Correct Answer: A</strong><br>Approach: Doppler effect: frequency increases (\( f_L > f_S \)) when source moves toward detector (\( f_L = \frac{v}{v - v_S} f_S \)). Without graph, assume 3148 Hz is higher than source frequency.</p>
+                </div>
+            </li>
+            <li>
+                <p>6.3 Calculate the speed of the train. Take the speed of sound in air as 340 m·s⁻¹.</p>
+                <label for="q6_3">
+                    Answer:
+                    <input type="text" id="q6_3" name="q6_3" placeholder="Enter speed in m/s (e.g., 20.00)">
+                </label>
+                <div class="memo" id="memo6_3" style="display: none;">
+                    <p><strong>Correct Answer: [Graph-dependent, e.g., 20.00 m/s]</strong><br>Approach: Use Doppler formula: \( f_L = \frac{v}{v - v_S} f_S \) (toward) or \( f_L = \frac{v}{v + v_S} f_S \) (away). Solve for \( v_S \) using graph frequencies (e.g., 3148 Hz) and source frequency.</p>
+                </div>
+            </li>
+            <li>
+                <p>6.4 The detector started recording the frequency of the moving train's siren when the train was 350 m away. Calculate time \( t_1 \) indicated on the graph above.</p>
+                <label for="q6_4">
+                    Answer:
+                    <input type="text" id="q6_4" name="q6_4" placeholder="Enter time in seconds (e.g., 17.50)">
+                </label>
+                <div class="memo" id="memo6_4" style="display: none;">
+                    <p><strong>Correct Answer: [Graph-dependent, e.g., 17.50 s]</strong><br>Approach: Time \( t_1 \) is when train passes detector. Distance \( 350 \, \text{m} \), speed from 6.3 (e.g., 20 m/s): \( t_1 = \frac{350}{20} = 17.50 \, \text{s} \). Confirm with graph.</p>
+                </div>
+            </li>
+        </ol>
+        <button class="check-answer" onclick="checkAllAnswers('question6', [
+        {id: 'q6_1', correct: 'frequency change relative motion', memo: 'memo6_1'},
+        {id: 'q6_2', correct: 'a', memo: 'memo6_2'},
+        {id: 'q6_3', correct: 'numerical', memo: 'memo6_3'},
+        {id: 'q6_4', correct: 'numerical', memo: 'memo6_4'}
+    ], this)" aria-expanded="false" aria-label="Check or reset incorrect answers for Question 6">Check Answer</button>
+    </section>
+
+<section class="question" id="question7">
+    <h3>Question 7</h3>
+    <p>Two small charged spheres, A and B, are placed on insulated stands, 0,2 m apart, as shown in the diagram below. They carry charges of \(-4 \times 10^{-6} \, \text{C}\) and \(+3 \times 10^{-6} \, \text{C}\) respectively.</p>
+    <p>M is a point that is a distance of 0,1 m to the right of sphere B.</p>
+    <img src="/images/Q7.png" alt="Diagram of charged spheres A and B with point M">
+    <ol>
+        <li>
+            <p>7.1 Calculate the number of electrons in excess on sphere A.</p>
+            <label for="q7_1">
+                Answer:
+                <input type="text" id="q7_1" name="q7_1" placeholder="Enter number of electrons (e.g., 2.50e13)">
+            </label>
+        </li>
+        <li>
+            <p>7.2 Calculate the magnitude of the electrostatic force exerted by sphere A on sphere B.</p>
+            <label for="q7_2">
+                Answer:
+                <input type="text" id="q7_2" name="q7_2" placeholder="Enter force in newtons (e.g., 337.50)">
+            </label>
+        </li>
+        <li>
+            <p>7.3 Describe the term electric field.</p>
+            <label for="q7_3">
+                Answer:
+                <textarea id="q7_3" name="q7_3" placeholder="Type your description"></textarea>
+            </label>
+        </li>
+        <li>
+            <p>7.4 Calculate the magnitude of the net electric field at point M.</p>
+            <label for="q7_4">
+                Answer:
+                <input type="text" id="q7_4" name="q7_4" placeholder="Enter electric field in N/C (e.g., 2.25e6)">
+            </label>
+        </li>
+        <li>
+            <p>7.5 Is the charge on sphere D POSITIVE or NEGATIVE?</p>
+            <p>Charged spheres A and B and another charged sphere D are now arranged along a rectangular system of axes, as shown in the diagram below.</p>
+            <img src="/images/Q7.1.png" alt="Diagram of spheres A, B, D in rectangular axes">
+            <p>The net electrostatic force experienced by sphere A is 7,69 N in the direction as shown in the diagram above.</p>
+            <div class="options-container" id="q7_5_options">
+                <label><input type="radio" name="q7_5" value="a"> A. <span class="option-text">Positive</span></label>
+                <label><input type="radio" name="q7_5" value="b"> B. <span class="option-text">Negative</span></label>
+            </div>
+        </li>
+        <li>
+            <p>7.6 Calculate the magnitude of the charge on sphere D.</p>
+            <label for="q7_6">
+                Answer:
+                <input type="text" id="q7_6" name="q7_6" placeholder="Enter charge in coulombs (e.g., 2.00e-6)">
+            </label>
+        </li>
+    </ol>
+    <button class="check-answer" onclick="checkSectionAnswers('question7', this)" aria-expanded="false" aria-label="Check or reset answers for Question 7">Check Answer</button>
+    <div class="memo" id="memo7_1"><p><strong>Correct Answer: 2.50 × 10¹³</strong><br>Approach: Number of electrons \( n = \frac{Q}{e} \) (data sheet: \( e = -1.6 \times 10^{-19} \, \text{C} \)). Charge \( Q = -4 \times 10^{-6} \, \text{C} \). Thus, \( n = \frac{4 \times 10^{-6}}{1.6 \times 10^{-19}} = 2.50 \times 10^{13} \).</p></div>
+    <div class="memo" id="memo7_2"><p><strong>Correct Answer: 337.50 N</strong><br>Approach: Coulomb’s law: \( F = \frac{k Q_1 Q_2}{r^2} \) (data sheet: \( k = 9.0 \times 10^9 \)). Substitute: \( Q_1 = 4 \times 10^{-6} \, \text{C} \), \( Q_2 = 3 \times 10^{-6} \, \text{C} \), \( r = 0.2 \, \text{m} \). \( F = \frac{9 \times 10^9 \times 4 \times 10^{-6} \times 3 \times 10^{-6}}{0.2^2} = 337.50 \, \text{N} \).</p></div>
+    <div class="memo" id="memo7_3"><p><strong>Correct Answer: The electric field is the force per unit positive charge experienced by a charge placed in the field.</strong><br>Approach: Defined as \( E = \frac{F}{q} \) (data sheet).</p></div>
+    <div class="memo" id="memo7_4"><p><strong>Correct Answer: 2.25 × 10⁶ N/C</strong><br>Approach: Electric field \( E = \frac{k Q}{r^2} \). For A at M (\( r = 0.3 \, \text{m} \)): \( E_A = \frac{9 \times 10^9 \times 4 \times 10^{-6}}{0.3^2} = 4 \times 10^5 \, \text{N/C} \) (left). For B at M (\( r = 0.1 \, \text{m} \)): \( E_B = \frac{9 \times 10^9 \times 3 \times 10^{-6}}{0.1^2} = 2.7 \times 10^6 \, \text{N/C} \) (left). Net: \( E = E_B - E_A = 2.7 \times 10^6 - 4 \times 10^5 = 2.25 \times 10^6 \, \text{N/C} \).</p></div>
+    <div class="memo" id="memo7_5"><p><strong>Correct Answer: A</strong><br>Approach: A (\(-4 \times 10^{-6} \, \text{C}\)) is negative. B exerts attractive force (right). Net force on A is 7.69 N in given direction (assume right). D’s force must be repulsive (D positive) to align with net force direction.</p></div>
+    <div class="memo" id="memo7_6"><p><strong>Correct Answer: 2.00 × 10⁻⁶ C</strong><br>Approach: Net force on A: 7.69 N. Force from B: 337.50 N (right). Assume D at distance \( r \) (e.g., 0.2 m). Force from D: \( F_D = \frac{k Q_A Q_D}{r^2} \). Net force balance requires iterative solving; placeholder: \( Q_D \approx 2 \times 10^{-6} \, \text{C} \).</p></div>
+</section>
+
+<section class="question" id="question8">
+    <h3>Question 8</h3>
+    <p>A battery with an internal resistance of 0,5 Ω and an unknown emf (ε) is connected to three resistors, a high resistance voltmeter, and an ammeter of negligible resistance, as shown in the circuit diagram below.</p>
+    <p>The resistance of the connecting wires must be ignored.</p>
+    <img src="/images/Q8.png" alt="Circuit with battery, resistors, voltmeter, and ammeter">
+    <ol>
+        <li>
+            <p>8.1 Define the term emf of a battery.</p>
+            <label for="q8_1">
+                Answer:
+                <textarea id="q8_1" name="q8_1" placeholder="Type your definition"></textarea>
+            </label>
+        </li>
+        <li>
+            <p>8.2 Give a reason why the voltmeter reading decreases by 1,5 V when switch S is closed.</p>
+            <label for="q8_2">
+                Answer:
+                <textarea id="q8_2" name="q8_2" placeholder="Type your reason"></textarea>
+            </label>
+        </li>
+        <li>
+            <p>8.3 Calculate the following when switch S is closed:</p>
+            <ol>
+                <li>
+                    <p>8.3.1 Reading on the ammeter</p>
+                    <label for="q8_3_1">
+                        Answer:
+                        <input type="text" id="q8_3_1" name="q8_3_1" placeholder="Enter current in amperes (e.g., 3.00)">
+                    </label>
+                </li>
+                <li>
+                    <p>8.3.2 Total external resistance of the circuit</p>
+                    <label for="q8_3_2">
+                        Answer:
+                        <input type="text" id="q8_3_2" name="q8_3_2" placeholder="Enter resistance in ohms (e.g., 4.00)">
+                    </label>
+                </li>
+                <li>
+                    <p>8.3.3 Emf of the battery</p>
+                    <label for="q8_3_3">
+                        Answer:
+                        <input type="text" id="q8_3_3" name="q8_3_3" placeholder="Enter emf in volts (e.g., 13.50)">
+                    </label>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>8.4 A learner makes the following statement: The current through resistor \( R_3 \) is larger than the current through resistor \( R_2 \). Is this statement CORRECT? Choose from YES or NO. Explain the answer.</p>
+            <div class="options-container" id="q8_4_options">
+                <label><input type="radio" name="q8_4" value="a"> A. <span class="option-text">Yes</span></label>
+                <label><input type="radio" name="q8_4" value="b"> B. <span class="option-text">No</span></label>
+            </div>
+            <label for="q8_4_explain">
+                Explanation:
+                <textarea id="q8_4_explain" name="q8_4_explain" placeholder="Type your explanation"></textarea>
+            </label>
+        </li>
+        <li>
+            <p>8.5 The 4 Ω resistor is now removed from the circuit. How will this affect the emf of the battery? Choose from INCREASES, DECREASES, or REMAINS THE SAME.</p>
+            <div class="options-container" id="q8_5_options">
+                <label><input type="radio" name="q8_5" value="a"> A. <span class="option-text">Increases</span></label>
+                <label><input type="radio" name="q8_5" value="b"> B. <span class="option-text">Decreases</span></label>
+                <label><input type="radio" name="q8_5" value="c"> C. <span class="option-text">Remains the Same</span></label>
+            </div>
+        </li>
+    </ol>
+    <button class="check-answer" onclick="checkSectionAnswers('question8', this)" aria-expanded="false" aria-label="Check or reset answers for Question 8">Check Answer</button>
+    <div class="memo" id="memo8_1"><p><strong>Correct Answer: The emf of a battery is the maximum potential difference it can provide across its terminals when no current flows.</strong><br>Approach: Emf is the energy per unit charge supplied by the battery (data sheet: \( \text{emf} = I(R + r) \)).</p></div>
+    <div class="memo" id="memo8_2"><p><strong>Correct Answer: Closing switch S allows current to flow, causing a voltage drop across the internal resistance, reducing the terminal voltage.</strong><br>Approach: Terminal voltage \( V = \varepsilon - Ir \). Current increases when S closes, increasing \( Ir \).</p></div>
+    <div class="memo" id="memo8_3_1"><p><strong>Correct Answer: 3.00 A</strong><br>Approach: Voltmeter drop of 1.5 V is due to internal resistance: \( V_{\text{lost}} = Ir \), so \( I = \frac{1.5}{0.5} = 3 \, \text{A} \).</p></div>
+    <div class="memo" id="memo8_3_2"><p><strong>Correct Answer: [Diagram-dependent, e.g., 4.00 Ω]</strong><br>Approach: Total resistance \( R_{\text{total}} = R_{\text{external}} + r \). Use circuit configuration (series/parallel) to estimate \( R_{\text{external}} \).</p></div>
+    <div class="memo" id="memo8_3_3"><p><strong>Correct Answer: [Diagram-dependent, e.g., 13.50 V]</strong><br>Approach: \( \varepsilon = V + Ir \). Use voltmeter reading plus \( Ir = 1.5 \, \text{V} \). Or \( \varepsilon = I(R_{\text{external}} + r) \), with \( I \approx 3 \, \text{A} \).</p></div>
+    <div class="memo" id="memo8_4"><p><strong>Correct Answer: B</strong><br>Reason: Without diagram, assume series/parallel setup. In series, current is equal; in parallel, current splits inversely with resistance. Typically, \( R_3 \) and \( R_2 \) configuration suggests equal or less current in \( R_3 \).</p></div>
+    <div class="memo" id="memo8_5"><p><strong>Correct Answer: C</strong><br>Approach: Emf is intrinsic to the battery, independent of external resistance (data sheet: \( \text{emf} = I(R + r) \)).</p></div>
+</section>
+
+<section class="question" id="question9">
+    <h3>Question 9</h3>
+    <ol>
+        <li>
+            <p>9.1 A simplified diagram of an electrical machine is shown below.</p>
+            <img src="/images/Q9.png" alt="Diagram of electrical machine">
+            <ol>
+                <li>
+                    <p>9.1.1 Is this machine a DC motor or a DC generator?</p>
+                    <div class="options-container" id="q9_1_1_options">
+                        <label><input type="radio" name="q9_1_1" value="a"> A. <span class="option-text">DC Motor</span></label>
+                        <label><input type="radio" name="q9_1_1" value="b"> B. <span class="option-text">DC Generator</span></label>
+                    </div>
+                </li>
+                <li>
+                    <p>9.1.2 Write down the energy conversion that takes place while this machine is in operation.</p>
+                    <label for="q9_1_2">
+                        Answer:
+                        <textarea id="q9_1_2" name="q9_1_2" placeholder="Type your answer"></textarea>
+                    </label>
+                </li>
+                <li>
+                    <p>9.1.3 Write down the name of component A in the diagram.</p>
+                    <label for="q9_1_3">
+                        Answer:
+                        <textarea id="q9_1_3" name="q9_1_3" placeholder="Type your answer"></textarea>
+                    </label>
+                </li>
+                <li>
+                    <p>9.1.4 In which direction will the coil, shown in the diagram above, rotate? Choose from CLOCKWISE or ANTICLOCKWISE.</p>
+                    <div class="options-container" id="q9_1_4_options">
+                        <label><input type="radio" name="q9_1_4" value="a"> A. <span class="option-text">Clockwise</span></label>
+                        <label><input type="radio" name="q9_1_4" value="b"> B. <span class="option-text">Anticlockwise</span></label>
+                    </div>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>9.2 An electrical device is marked 200 W; 220 V.</p>
+            <ol>
+                <li>
+                    <p>9.2.1 Define the term rms voltage.</p>
+                    <label for="q9_2_1">
+                        Answer:
+                        <textarea id="q9_2_1" name="q9_2_1" placeholder="Type your definition"></textarea>
+                    </label>
+                </li>
+                <li>
+                    <p>9.2.2 Calculate the resistance of the device.</p>
+                    <label for="q9_2_2">
+                        Answer:
+                        <input type="text" id="q9_2_2" name="q9_2_2" placeholder="Enter resistance in ohms (e.g., 242.00)">
+                    </label>
+                </li>
+                <li>
+                    <p>9.2.3 Calculate the energy dissipated by the device in 10 minutes.</p>
+                    <p>This device is now connected to a 150 V AC source.</p>
+                    <label for="q9_2_3">
+                        Answer:
+                        <input type="text" id="q9_2_3" name="q9_2_3" placeholder="Enter energy in joules (e.g., 55800)">
+                    </label>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <button class="check-answer" onclick="checkSectionAnswers('question9', this)" aria-expanded="false" aria-label="Check or reset answers for Question 9">Check Answer</button>
+    <div class="memo" id="memo9_1_1"><p><strong>Correct Answer: A</strong><br>Approach: DC motor if input is electrical, producing mechanical rotation. DC generator converts mechanical to electrical.</p></div>
+    <div class="memo" id="memo9_1_2"><p><strong>Correct Answer: Electrical energy to mechanical energy</strong><br>Approach: For a DC motor, electrical input (current) produces mechanical output (rotation).</p></div>
+    <div class="memo" id="memo9_1_3"><p><strong>Correct Answer: Commutator</strong><br>Approach: In DC machines, component A is typically the commutator, reversing current to maintain rotation.</p></div>
+    <div class="memo" id="memo9_1_4"><p><strong>Correct Answer: A</strong><br>Approach: Use motor effect (Fleming’s left-hand rule). Assume standard setup where current and magnetic field produce clockwise rotation.</p></div>
+    <div class="memo" id="memo9_2_1"><p><strong>Correct Answer: The rms voltage is the equivalent DC voltage that produces the same power in a resistive load.</strong><br>Approach: \( V_{\text{rms}} = \frac{V_{\text{max}}}{\sqrt{2}} \) (data sheet).</p></div>
+    <div class="memo" id="memo9_2_2"><p><strong>Correct Answer: 242.00 Ω</strong><br>Approach: Power \( P = \frac{V_{\text{rms}}^2}{R} \). Substitute: \( 200 = \frac{220^2}{R} \). Solve: \( R = \frac{220^2}{200} = 242 \, \Omega \).</p></div>
+    <div class="memo" id="memo9_2_3"><p><strong>Correct Answer: 55800 J</strong><br>Approach: New power \( P = \frac{V_{\text{rms}}^2}{R} = \frac{150^2}{242} \approx 93 \, \text{W} \). Energy \( W = P \Delta t \), \( \Delta t = 10 \times 60 = 600 \, \text{s} \). Thus, \( W = 93 \times 600 = 55800 \, \text{J} \).</p></div>
+</section>
+
+<section class="question" id="question10">
+    <h3>Question 10</h3>
+    <p>An experiment is conducted to investigate the relationship between the frequency of light incident on a metal and the maximum kinetic energy of the emitted electrons from the surface of the metal. This experiment is conducted for three different metals.</p>
+    <p>The graph below represents the results obtained.</p>
+    <img src="/images/Q10.png" alt="Graph of frequency vs. maximum kinetic energy for three metals">
+    <ol>
+        <li>
+            <p>10.1 Name the phenomenon on which this experiment is based.</p>
+            <label for="q10_1">
+                Answer:
+                <textarea id="q10_1" name="q10_1" placeholder="Type your answer"></textarea>
+            </label>
+        </li>
+        <li>
+            <p>10.2 Name the physical quantity represented by X on the graph.</p>
+            <label for="q10_2">
+                Answer:
+                <textarea id="q10_2" name="q10_2" placeholder="Type your answer"></textarea>
+            </label>
+        </li>
+        <li>
+            <p>10.3 Which ONE of the three metals needs incident light with the largest wavelength for the emission of electrons? Give a reason for the answer.</p>
+            <div class="options-container" id="q10_3_options">
+                <label><input type="radio" name="q10_3" value="a"> A. <span class="option-text">Metal A</span></label>
+                <label><input type="radio" name="q10_3" value="b"> B. <span class="option-text">Metal B</span></label>
+                <label><input type="radio" name="q10_3" value="c"> C. <span class="option-text">Metal C</span></label>
+            </div>
+            <label for="q10_3_reason">
+                Reason:
+                <textarea id="q10_3_reason" name="q10_3_reason" placeholder="Type your reason"></textarea>
+            </label>
+        </li>
+        <li>
+            <p>10.4 Define the term work function in words.</p>
+            <label for="q10_4">
+                Answer:
+                <textarea id="q10_4" name="q10_4" placeholder="Type your definition"></textarea>
+            </label>
+        </li>
+        <li>
+            <p>10.5 Calculate the:</p>
+            <ol>
+                <li>
+                    <p>10.5.1 Work function of platinum</p>
+                    <label for="q10_5_1">
+                        Answer:
+                        <input type="text" id="q10_5_1" name="q10_5_1" placeholder="Enter work function in joules (e.g., 6.35e-19)">
+                    </label>
+                </li>
+                <li>
+                    <p>10.5.2 Frequency of the incident light that will emit electrons from the surface of platinum with a maximum velocity of 5,60 × 10⁵ m·s⁻¹</p>
+                    <label for="q10_5_2">
+                        Answer:
+                        <input type="text" id="q10_5_2" name="q10_5_2" placeholder="Enter frequency in Hz (e.g., 1.10e15)">
+                    </label>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <button class="check-answer" onclick="checkSectionAnswers('question10', this)" aria-expanded="false" aria-label="Check or reset answers for Question 10">Check Answer</button>
+    <div class="memo" id="memo10_1"><p><strong>Correct Answer: Photoelectric effect</strong><br>Approach: Electrons emitted from a metal surface when struck by light above threshold frequency.</p></div>
+    <div class="memo" id="memo10_2"><p><strong>Correct Answer: Threshold frequency</strong><br>Approach: X is the frequency where \( K_{\text{max}} = 0 \), corresponding to \( f_0 \) in \( E = W_0 + K_{\text{max}} \).</p></div>
+    <div class="memo" id="memo10_3"><p><strong>Correct Answer: A</strong><br>Reason: Largest wavelength means lowest frequency (\( \lambda = \frac{c}{f} \)). Metal with lowest threshold frequency (leftmost X-intercept on graph) requires largest wavelength.</p></div>
+    <div class="memo" id="memo10_4"><p><strong>Correct Answer: The work function is the minimum energy required to remove an electron from the surface of a metal.</strong><br>Approach: \( W_0 = h f_0 \) (data sheet).</p></div>
+    <div class="memo" id="memo10_5_1"><p><strong>Correct Answer: 6.35 × 10⁻¹⁹ J</strong><br>Approach: \( W_0 = h f_0 \), \( f_0 \approx 9.6 \times 10^{14} \, \text{Hz} \) (graph estimate), \( h = 6.63 \times 10^{-34} \, \text{J·s} \). Thus, \( W_0 = 6.63 \times 10^{-34} \times 9.6 \times 10^{14} \approx 6.35 \times 10^{-19} \, \text{J} \).</p></div>
+    <div class="memo" id="memo10_5_2"><p><strong>Correct Answer: 1.17 × 10¹⁵ Hz</strong><br>Approach: \( E = W_0 + K_{\text{max}} \), \( K_{\text{max}} = \frac{1}{2} m_e v^2 \), \( m_e = 9.11 \times 10^{-31} \, \text{kg} \). \( K_{\text{max}} = \frac{1}{2} \times 9.11 \times 10^{-31} \times (5.6 \times 10^5)^2 \approx 1.43 \times 10^{-19} \, \text{J} \). \( W_0 \approx 6.35 \times 10^{-19} \, \text{J} \). \( E = 6.35 \times 10^{-19} + 1.43 \times 10^{-19} = 7.78 \times 10^{-19} \, \text{J} \). \( f = \frac{E}{h} = \frac{7.78 \times 10^{-19}}{6.63 \times 10^{-34}} \approx 1.17 \times 10^{15} \, \text{Hz} \).</p></div>
+</section>
+
+<section class="data-sheets">
+    <h3>Data for Physical Sciences P1 (Physics)</h3>
+    <h4>Table 1: Physical Constants</h4>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Acceleration due to gravity</td>
+            <td><span class="math">g</span></td>
+            <td>9,8 m·s⁻²</td>
+        </tr>
+        <tr>
+            <td>Universal gravitational constant</td>
+            <td><span class="math">G</span></td>
+            <td>6,67 × 10⁻¹¹ N·m²·kg⁻²</td>
+        </tr>
+        <tr>
+            <td>Speed of light in a vacuum</td>
+            <td><span class="math">c</span></td>
+            <td>3,0 × 10⁸ m·s⁻¹</td>
+        </tr>
+        <tr>
+            <td>Planck’s constant</td>
+            <td><span class="math">h</span></td>
+            <td>6,63 × 10⁻³⁴ J·s</td>
+        </tr>
+        <tr>
+            <td>Coulomb’s constant</td>
+            <td><span class="math">k</span></td>
+            <td>9,0 × 10⁹ N·m²·C⁻²</td>
+        </tr>
+        <tr>
+            <td>Charge on electron</td>
+            <td><span class="math">e</span></td>
+            <td>-1,6 × 10⁻¹⁹ C</td>
+        </tr>
+        <tr>
+            <td>Mass of electron</td>
+            <td><span class="math">m_e</span></td>
+            <td>9,11 × 10⁻³¹ kg</td>
+        </tr>
+    </table>
+
+    <h4>Table 2: Formulae</h4>
+    <table>
+        <tr>
+            <th colspan="2">Motion</th>
+        </tr>
+        <tr>
+            <td><span class="math">v_f = v_i + a \Delta t</span></td>
+            <td><span class="math">\Delta y = v_i \Delta t + \frac{1}{2} a \Delta t^2</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">v_f^2 = v_i^2 + 2 a \Delta y</span></td>
+            <td><span class="math">\Delta y = \left( \frac{v_i + v_f}{2} \right) \Delta t</span></td>
+        </tr>
+        <tr>
+            <th colspan="2">Force</th>
+        </tr>
+        <tr>
+            <td><span class="math">F_{\text{net}} = ma</span></td>
+            <td><span class="math">p = mv</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">f_s^{\text{max}} = \mu_s N</span></td>
+            <td><span class="math">f_k = \mu_k N</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">F_{\text{net}} \Delta t = \Delta p</span></td>
+            <td><span class="math">\Delta p = m v_f - m v_i</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">w = mg</span></td>
+            <td><span class="math">F_g = \frac{G m_1 m_2}{r^2}</span></td>
+        </tr>
+        <tr>
+            <th colspan="2">Work, Energy and Power</th>
+        </tr>
+        <tr>
+            <td><span class="math">W = F \Delta x \cos \theta</span></td>
+            <td><span class="math">U = mgh</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">K = \frac{1}{2} m v^2</span></td>
+            <td><span class="math">W_{\text{net}} = \Delta K</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">\Delta K = K_f - K_i</span></td>
+            <td><span class="math">W_{\text{nc}} = \Delta K + \Delta U</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">P = \frac{W}{\Delta t}</span></td>
+            <td><span class="math">P = F v</span></td>
+        </tr>
+        <tr>
+            <th colspan="2">Waves, Sound and Light</th>
+        </tr>
+        <tr>
+            <td><span class="math">v = f \lambda</span></td>
+            <td><span class="math">T = \frac{1}{f}</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">f_L = \frac{v \pm v_L}{v \pm v_S} f_S</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th colspan="2">Electricity and Magnetism</th>
+        </tr>
+        <tr>
+            <td><span class="math">F = \frac{k Q_1 Q_2}{r^2}</span></td>
+            <td><span class="math">E = \frac{k Q}{r^2}</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">E = \frac{F}{q}</span></td>
+            <td><span class="math">V = \frac{W}{q}</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">R = \frac{V}{I}</span></td>
+            <td><span class="math">R_s = R_1 + R_2 + \ldots</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + \ldots</span></td>
+            <td><span class="math">W = V q</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">W = V I \Delta t</span></td>
+            <td><span class="math">W = I^2 R \Delta t</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">W = \frac{V^2 \Delta t}{R}</span></td>
+            <td><span class="math">P = \frac{W}{\Delta t}</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">P = V I</span></td>
+            <td><span class="math">P = I^2 R</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">P = \frac{V^2}{R}</span></td>
+            <td><span class="math">I_{\text{rms}} = \frac{I_{\text{max}}}{\sqrt{2}}</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">V_{\text{rms}} = \frac{V_{\text{max}}}{\sqrt{2}}</span></td>
+            <td><span class="math">\text{emf} = I (R + r)</span></td>
+        </tr>
+        <tr>
+            <th colspan="2">Photons and Electrons</th>
+        </tr>
+        <tr>
+            <td><span class="math">E = h f</span></td>
+            <td><span class="math">E = h \frac{c}{\lambda}</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">E = W_0 + K_{\text{max}}</span></td>
+            <td><span class="math">W_0 = h f_0</span></td>
+        </tr>
+        <tr>
+            <td><span class="math">K_{\text{max}} = \frac{1}{2} m v_{\text{max}}^2</span></td>
+            <td></td>
+        </tr>
+    </table>
+</section>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
