@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +7,28 @@
     <style>
         /* Global styles */
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
+            background: #FFFFFF;
+            color: #000000;
+            padding: 50px 50px;
+            margin: 40px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid #007BFF;
         }
 
         /* Section styling */
         section {
             border: 2px solid #000;
-            padding: 15px;
+            padding: 15px 30px;
             margin-bottom: 20px;
             border-radius: 5px;
             width: 100%;
@@ -44,7 +49,7 @@
         img {
             max-width: 100%;
             height: auto;
-            margin: 10px 0;
+            margin: 10px 40px;
             display: block;
             border: 1px solid #ccc;
             border-radius: 3px;
@@ -59,7 +64,7 @@
 
         /* Input and label styling */
         input[type="radio"] {
-            margin: 5px 10px 5px 0;
+            margin-left: 40px;
         }
 
         input[type="text"], textarea {
@@ -78,12 +83,12 @@
         }
 
         input[type="text"].correct, textarea.correct {
-            background-color: #ccffcc;
+            background-color: #b1edb1;
             border: 2px solid #00ff00;
         }
 
         input[type="text"].incorrect, textarea.incorrect {
-            background-color: #ffcccc;
+            background-color: #f58787;
             border: 2px solid #ff0000;
         }
 
@@ -106,12 +111,12 @@
             cursor: pointer;
             border: 1px solid #000;
             border-radius: 3px;
-            background-color: #f0f0f0;
+            background-color: #007BFF;
             transition: background-color 0.2s;
         }
 
         button:hover {
-            background-color: #e0e0e0;
+            background-color: #5999dc;
         }
 
         button:focus {
@@ -256,18 +261,26 @@
         <div id="correct1_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>1.3 Which ONE of the following is the CORRECT structural formula for METHYL ETHANOATE?</p>
-        <label><input type="radio" name="q1_3" id="q1_3_A" value="A"> A. <img src="placeholder_q1_3_A.jpg" alt="Structural formula option A for methyl ethanoate" loading="lazy"></label><br>
-        <label><input type="radio" name="q1_3" id="q1_3_B" value="B"> B. <img src="placeholder_q1_3_B.jpg" alt="Structural formula option B for methyl ethanoate" loading="lazy"></label><br>
-        <label><input type="radio" name="q1_3" id="q1_3_C" value="C"> C. <img src="placeholder_q1_3_C.jpg" alt="Structural formula option C for methyl ethanoate" loading="lazy"></label><br>
-        <label><input type="radio" name="q1_3" id="q1_3_D" value="D"> D. <img src="placeholder_q1_3_D.jpg" alt="Structural formula option D for methyl ethanoate" loading="lazy"></label>
+        <p>1.3 Which ONE of the following is the CORRECT structural formula for <strong>METHYL ETHANOATE?</strong></p>
+        <img src="/images/P21.3.png" alt="Structural formula option A for methyl ethanoate" loading="lazy">
+        <label><input type="radio" name="q1_3" id="q1_3_A" value="A"> A.</label><br>
+        <label><input type="radio" name="q1_3" id="q1_3_B" value="B"> B.</label><br>
+        <label><input type="radio" name="q1_3" id="q1_3_C" value="C"> C.</label><br>
+        <label><input type="radio" name="q1_3" id="q1_3_D" value="D"> D.</label>
         <div id="memo1_3" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Methyl ethanoate (CH₃COOCH₃) has a carbonyl (C=O) bonded to a methoxy group. Verify the structural formula in the diagram.</p>
         </div>
         <div id="correct1_3" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>1.4 Zinc (Zn) granules react with EXCESS HCl(aq). Which combination of volume and concentration of HCl(aq) gives the highest INITIAL reaction rate?</p>
+        <p>1.4 Zinc (Zn) granules react as follows with EXCESS hydrochloric acid solution, HCl(aq):</p>
+        <p style="margin-left: 100px;"><strong>Zn(s)  +  HCℓ(aq)  →  ZnCℓ2(aq)  +  H2(g)</strong></p>
+        <p>
+            Which ONE of the following combinations of volume and concentration of
+            HCℓ(aq) will result in the highest INITIAL reaction rate for the same mass of
+            zinc granules used? (Assume that the zinc granules are completely covered
+            by the acid in all cases.)
+        </p>
         <label><input type="radio" name="q1_4" id="q1_4_A" value="A"> A. 50 cm³, 0.5 mol·dm⁻³</label><br>
         <label><input type="radio" name="q1_4" id="q1_4_B" value="B"> B. 100 cm³, 1.0 mol·dm⁻³</label><br>
         <label><input type="radio" name="q1_4" id="q1_4_C" value="C"> C. 200 cm³, 0.1 mol·dm⁻³</label><br>
@@ -289,11 +302,18 @@
         <div id="correct1_5" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>1.6 For 2CrO₄²⁻(aq) + 2H⁺(aq) ⇌ Cr₂O₇²⁻(aq) + H₂O(l), ΔH < 0, which change favours the forward reaction?</p>
-        <label><input type="radio" name="q1_6" id="q1_6_A" value="A"> A. Decrease T, Increase pH</label><br>
-        <label><input type="radio" name="q1_6" id="q1_6_B" value="B"> B. Decrease T, Decrease pH</label><br>
-        <label><input type="radio" name="q1_6" id="q1_6_C" value="C"> C. Increase T, Increase pH</label><br>
-        <label><input type="radio" name="q1_6" id="q1_6_D" value="D"> D. Increase T, Decrease pH</label>
+        <p>1.6 Consider the equilibrium represented by the balanced equation below</p>
+        <p style="margin-left: 30px;"><strong>2CrO₄²⁻(aq) + 2H⁺(aq) ⇌ Cr₂O₇²⁻(aq) + H₂O(l), ΔH < 0</strong></p>
+        <p>
+            Which ONE of the following changes to the equilibrium will favour the forward
+            reaction?
+        </p>
+        <img src="/images/Question%201.6.png" alt="Graph of electrode mass change option A" loading="lazy">
+
+        <label><input type="radio" name="q1_6" id="q1_6_A" value="A"> A</label><br>
+        <label><input type="radio" name="q1_6" id="q1_6_B" value="B"> B</label><br>
+        <label><input type="radio" name="q1_6" id="q1_6_C" value="C"> C</label><br>
+        <label><input type="radio" name="q1_6" id="q1_6_D" value="D"> D</label>
         <div id="memo1_6" class="memo">
             <p><strong>Memo:</strong> Exothermic (ΔH < 0), so decreasing T favours forward reaction. Decreasing pH (more H⁺) shifts equilibrium right (Le Chatelier). Option B is correct.</p>
         </div>
@@ -311,7 +331,8 @@
         <div id="correct1_7" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>1.8 Which reaction proceeds spontaneously under standard conditions?</p>
+        <p>1.8 Which ONE of the following reactions will proceed spontaneously under
+            standard conditions? </p>
         <label><input type="radio" name="q1_8" id="q1_8_A" value="A"> A. Ni²⁺ + H₂ → Ni + 2H⁺</label><br>
         <label><input type="radio" name="q1_8" id="q1_8_B" value="B"> B. Br₂ + 2Cl⁻ → 2Br⁻ + Cl₂</label><br>
         <label><input type="radio" name="q1_8" id="q1_8_C" value="C"> C. 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂</label><br>
@@ -322,11 +343,20 @@
         <div id="correct1_8" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>1.9 Electrochemical cell for copper purification (mass change of electrodes).</p>
-        <label><input type="radio" name="q1_9" id="q1_9_A" value="A"> A. <img src="placeholder_q1_9_A.jpg" alt="Graph of electrode mass change option A" loading="lazy"></label><br>
-        <label><input type="radio" name="q1_9" id="q1_9_B" value="B"> B. <img src="placeholder_q1_9_B.jpg" alt="Graph of electrode mass change option B" loading="lazy"></label><br>
-        <label><input type="radio" name="q1_9" id="q1_9_C" value="C"> C. <img src="placeholder_q1_9_C.jpg" alt="Graph of electrode mass change option C" loading="lazy"></label><br>
-        <label><input type="radio" name="q1_9" id="q1_9_D" value="D"> D. <img src="placeholder_q1_9_D.jpg" alt="Graph of electrode mass change option D" loading="lazy"></label>
+        <p>
+            1.9 The simplified diagram below represents an electrochemical cell used for the
+            PURIFICATION of copper.
+        </p>
+           <img src="/images/Question-1-1.9.png" alt="Graph of electrode mass change option A" loading="lazy">
+        <p>
+            Which ONE of the graphs below represents the CHANGE IN MASS of
+            electrodes <strong>P</strong> and <strong>Q</strong> during the purification process?
+        </p>
+        <img src="/images/Question1.9Options.png" alt="Graph of electrode mass change option A" loading="lazy">
+        <label><input type="radio" name="q1_9" id="q1_9_A" value="A"> A. </label><br>
+        <label><input type="radio" name="q1_9" id="q1_9_B" value="B"> B. </label><br>
+        <label><input type="radio" name="q1_9" id="q1_9_C" value="C"> C. </label><br>
+        <label><input type="radio" name="q1_9" id="q1_9_D" value="D"> D. </label>
         <div id="memo1_9" class="memo">
             <p><strong>Memo:</strong> Image-dependent. In copper purification, anode (impure Cu) loses mass, cathode (pure Cu) gains mass. Check graph for opposite trends.</p>
         </div>
@@ -350,73 +380,70 @@
 </section>
 
 <section id="question2">
-    <h2>QUESTION 2</h2>
+    <h2>QUESTION 2(Start on a new page.)</h2>
     <div class="question">
-        <p>2.1.1</p>
-        <img src="placeholder_q2_1_1.jpg" alt="Table or diagram of organic compounds for question 2.1.1" loading="lazy">
-        <input type="text" id="q2_1_1">
+        <p>The letters <strong>A</strong> to <strong>E</strong> in the table below represent five organic compounds</p>
+        <img src="/images/P2%20Q3.png" alt="Table or diagram of organic compounds for question 2.1.1" loading="lazy">
+        <p>Use the information in the table to answer the questions that follow.</p>
+        <p>2.1 For compound <strong>D</strong>, write down the:</p>
+        <p style="margin-left: 30px;">2.1.1 Hommologous series to which it belongs</p>
+        <input type="text" id="q2_1_1" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo2_1_1" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Please provide the table or diagram to verify the answer.</p>
         </div>
         <div id="correct2_1_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>2.1.2</p>
-        <img src="placeholder_q2_1_2.jpg" alt="Table or diagram of organic compounds for question 2.1.2" loading="lazy">
-        <input type="text" id="q2_1_2">
+        <p style="margin-left: 30px;" >2.1.2   IUPAC name of a FUNTIONAL ISOMER</p>
+        <input  type="text" id="q2_1_2" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo2_1_2" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Please provide the table or diagram to verify the answer.</p>
         </div>
         <div id="correct2_1_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>2.1.3</p>
-        <img src="placeholder_q2_1_3.jpg" alt="Table or diagram of organic compounds for question 2.1.3" loading="lazy">
-        <input type="text" id="q2_1_3">
+        <p>2.2 write down the:</p>
+        <p style="margin-left: 30px;" >2.2.1 IUPAC name of compound <strong>A</strong></p>
+        <input type="text" id="q2_1_3" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo2_1_3" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Please provide the table or diagram to verify the answer.</p>
         </div>
         <div id="correct2_1_3" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>2.2 Write down the IUPAC name of compound B.</p>
-        <input type="text" id="q2_2">
+        <p style="margin-left: 30px;" >2.2.2 STRUCTURAL FORMULA of compound <strong>E</strong>.</p>
+        <input type="text" id="q2_2" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo2_2" class="memo">
             <p><strong>Memo:</strong> Without the table, assume B is an alcohol (context-based). Pentan-2-ol is a common answer, a secondary alcohol (C₅H₁₂O) with -OH on the second carbon.</p>
         </div>
         <div id="correct2_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>2.3 Write down the IUPAC name of compound C.</p>
-        <input type="text" id="q2_3">
+        <p>2.3 Compound <strong>B</strong> is primary alcohol.</p>
+        <p style="margin-left: 30px;">2.3.1 Write down the meaning ot the term primary alcohol.</p>
+        <input type="text" id="q2_3" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo2_3" class="memo">
             <p><strong>Memo:</strong> C is likely a ketone from oxidation of B. Pentan-2-one has a carbonyl on the second carbon, matching the structure.</p>
         </div>
         <div id="correct2_3" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>2.4 Write down the IUPAC name of compound E.</p>
-        <input type="text" id="q2_4">
+        <p>Compound <strong>B</strong> with another organic compound <strong>X</strong> to form Compound <strong>C</strong>.</p>
+        <p>Write down the:</p>
+        <p style="margin-left: 30px;" >2.3.2 Type of reaction that takes place</p>
+        <input type="text" id="q2_4" style="margin-left: 30px; width: calc(100% - 30px);" >
         <div id="memo2_4" class="memo">
             <p><strong>Memo:</strong> E is a carboxylic acid reacting to form an ester. Propanoic acid (C₂H₅COOH) fits typical esterification questions.</p>
         </div>
         <div id="correct2_4" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>2.5.1 Write down the IUPAC name of compound D.</p>
-        <input type="text" id="q2_5_1">
+        <p style="margin-left: 30px;" >2.3.3 IUPAC name of compound <strong>X</strong></p>
+        <input type="text" id="q2_5_1" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo2_5_1" class="memo">
             <p><strong>Memo:</strong> D is an ester from B (pentan-2-ol) and E (propanoic acid). The alkyl group (pentyl) and acid (propanoate) give pentyl propanoate.</p>
         </div>
         <div id="correct2_5_1" class="correct-answer"></div>
-    </div>
-    <div class="question">
-        <p>2.5.2 Write down the type of reaction that takes place.</p>
-        <input type="text" id="q2_5_2">
-        <div id="memo2_5_2" class="memo">
-            <p><strong>Memo:</strong> Alcohol + carboxylic acid → ester + water is esterification, a condensation reaction.</p>
-        </div>
-        <div id="correct2_5_2" class="correct-answer"></div>
     </div>
     <div class="button-container">
         <button onclick="checkSectionAnswers('question2', this)" aria-expanded="false" aria-label="Check answers for question2" aria-controls="question2">Check Answer</button>
@@ -425,7 +452,14 @@
 </section>
 
 <section id="question3">
-    <h2>QUESTION 3</h2>
+    <h2>QUESTION 3(Start on a new page.)</h2>
+    <p>
+        The relationship between boiling point and the number of carbon atoms in straight
+        chain molecules of aldehydes, alkanes and primary alcohols is investigated. Curves <strong>A</strong>,
+        <strong>B</strong> and <strong>C</strong> are obtained.
+    </p>
+    <img src="/images/P2%20Q3.png" alt="Diagram or graph for question 3.5" loading="lazy">
+
     <div class="question">
         <p>3.1 Define the term boiling point.</p>
         <input type="text" id="q3_1">
@@ -443,7 +477,10 @@
         <div id="correct3_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>3.3 Fully explain why boiling points increase with the number of carbon atoms.</p>
+        <p>
+            3.3 The graph shows that the boiling points increase as the number of carbon
+            atoms increases. Fully explain this trend.
+        </p>
         <textarea id="q3_3"></textarea>
         <div id="memo3_3" class="memo">
             <p><strong>Memo:</strong> As carbon atoms increase, molecular mass rises, enhancing London forces. More energy is needed to break these forces, increasing boiling point.</p>
@@ -451,17 +488,27 @@
         <div id="correct3_3" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>3.4</p>
-        <img src="placeholder_q3_4_1.jpg" alt="Diagram or graph for question 3.4" loading="lazy">
-        <input type="text" id="q3_4_1">
+        <p>3.4 Identify the curve (<strong>A</strong>,<strong>B</strong> or <strong>C</strong>) that represent the following:</p>
+        <p style="margin-left: 30px;">3.4.1 Compounds with London forces only</p>
+        <input type="text" id="q3_4_1" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo3_4_1" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
         </div>
         <div id="correct3_4_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>3.5</p>
-        <img src="placeholder_q3_5.jpg" alt="Diagram or graph for question 3.5" loading="lazy">
+        <p style="margin-left: 30px;">The aldehydes, Explain your answer.</p>
+        <input type="text" id="q3_4_2" style="margin-left: 30px; width: calc(100% - 30px);">
+        <div id="memo3_4_2" class="memo">
+            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+        </div>
+        <div id="correct3_4_2" class="correct-answer"></div>
+    </div>
+    <div class="question">
+        <p>
+            3.5 Use the information in the graph and write down the IUPAC name of the
+            compound with a boiling point of 373 K.
+        </p>
         <input type="text" id="q3_5">
         <div id="memo3_5" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
@@ -469,8 +516,10 @@
         <div id="correct3_5" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>3.6</p>
-        <img src="placeholder_q3_6.jpg" alt="Diagram or graph for question 3.6" loading="lazy">
+        <p>
+            3.6 Write down the IUPAC name of the compound containing five carbon atoms,
+            which has the lowest vapour pressure at a given temperature.
+        </p>
         <input type="text" id="q3_6">
         <div id="memo3_6" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
@@ -484,17 +533,22 @@
 </section>
 
 <section id="question4">
-    <h2>QUESTION 4</h2>
+    <h2>QUESTION 4(Start on a new page.)</h2>
+    <p>
+        The flow diagram below shows how various organic compounds can be prepared using
+        compound <strong>P</strong> as starting reagent.
+    </p>
+    <img src="/images/P2%20Q3.png" alt="Diagram or graph for question 3.5" loading="lazy">
     <div class="question">
         <p>4.1 Write down the meaning of the term hydrohalogenation.</p>
-        <input type="text" id="q4_1">
+        <input type="text" id="q4_1" >
         <div id="memo4_1" class="memo">
             <p><strong>Memo:</strong> Hydrohalogenation is the addition of a hydrogen halide (e.g., HBr) to an alkene, forming a haloalkane.</p>
         </div>
         <div id="correct4_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>4.2 Write down the STRUCTURAL FORMULA of compound Q.</p>
+        <p>4.2 Write down the STRUCTURAL FORMULA of compound <strong>Q</strong>.</p>
         <input type="text" id="q4_2">
         <div id="memo4_2" class="memo">
             <p><strong>Memo:</strong> Q is C₅H₁₂ (pentane). Structural formula: CH₃CH₂CH₂CH₂CH₃, a straight-chain alkane.</p>
@@ -502,23 +556,25 @@
         <div id="correct4_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>4.3.1 Write down the TYPE of elimination reaction.</p>
-        <input type="text" id="q4_3_1">
+        <p><strong>Reaction I</strong> is an elimination reaction.</p>
+        <p>Write down the:</p>
+        <p style="margin-left: 30px;">4.3.1 Write TYPE of elimination reaction</p>
+        <input type="text" id="q4_3_1" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo4_3_1" class="memo">
             <p><strong>Memo:</strong> Elimination from P (haloalkane) to Q (alkene) is dehydrohalogenation, removing HX (e.g., HBr) with a base.</p>
         </div>
         <div id="correct4_3_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>4.3.2 Write down the MOLECULAR FORMULA of compound P.</p>
-        <input type="text" id="q4_3_2">
+        <p style="margin-left: 30px;">4.3.2 MOLECULAR FORMULA of compound <strong>P</strong>.</p>
+        <input type="text" id="q4_3_2" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo4_3_2" class="memo">
             <p><strong>Memo:</strong> P is a haloalkane yielding Q (C₅H₁₂) after hydrohalogenation. Molecular formula: C₅H₁₁Br.</p>
         </div>
         <div id="correct4_3_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>4.4 Write down the IUPAC name of compound R.</p>
+        <p>4.4 Write down the IUPAC name of compound <strong>R</strong>.</p>
         <input type="text" id="q4_4">
         <div id="memo4_4" class="memo">
             <p><strong>Memo:</strong> R is formed by bromination of Q (pentane). Likely 2-bromopentane, with Br on the second carbon.</p>
@@ -526,17 +582,17 @@
         <div id="correct4_4" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>4.5.1</p>
-        <img src="placeholder_q4_5_1.jpg" alt="Reaction scheme or structural formula for question 4.5.1" loading="lazy">
-        <input type="text" id="q4_5_1">
+        <p>4.5 For the HYDROLYSIS REACTION, write down the:</p>
+        <p style="margin-left: 30px;">4.5.1 Balanced equation using structural formulae</p>
+        <input type="text" id="q4_5_1" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo4_5_1" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
         </div>
         <div id="correct4_5_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>4.5.2 Write down TWO reaction conditions for hydrolysis.</p>
-        <input type="text" id="q4_5_2">
+        <p style="margin-left: 30px;">4.5.2 TWO reaction conditions</p>
+        <input type="text" id="q4_5_2" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo4_5_2" class="memo">
             <p><strong>Memo:</strong> Hydrolysis of haloalkane (R) requires heat and dilute NaOH to form an alcohol.</p>
         </div>
@@ -549,44 +605,71 @@
 </section>
 
 <section id="question5">
-    <h2>QUESTION 5</h2>
+    <h2>QUESTION 5(Start on a new page.)</h2>
+    <p>
+        The reaction of calcium carbonate
+        <strong>(CaCO3)</strong> and EXCESS dilute hydrochloric acid
+        <strong>(HCℓ)</strong> is used to investigate one of the factors that affects reaction rate. The balanced
+        equation for the reaction is:
+    </p>
+    <p style="margin-left: 50px;"><strong>CaCO3(s)  +  2HCℓ(aq)  →  CaCℓ2(aq)  +  H2O(ℓ)  +  CO2(g)</strong></p>
+    <p>
+        The same mass of <strong>CaCO3</strong> is used in all the experiments and the temperature of the
+        hydrochloric acid in all experiments is 40 °C.
+    </p>
+    <p>
+        The reaction conditions for each experiment are summarised in the table below.</p>
+    <img src="/images/Question%205.png" alt="Reaction scheme or structural formula for question 4.5.1" loading="lazy">
+
     <div class="question">
-        <p>5.1.1 Write down the dependent variable.</p>
-        <input type="text" id="q5_1_1">
+        <p>5.1 For this investigation write down the:</p>
+        <p style="margin-left: 30px;">5.1.1 Dependent variable.</p>
+        <input type="text" id="q5_1_1" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo5_1_1" class="memo">
             <p><strong>Memo:</strong> Dependent variable is the rate of reaction, measured by CO₂ production rate.</p>
         </div>
         <div id="correct5_1_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>5.1.2 Write down the independent variable.</p>
-        <input type="text" id="q5_1_2">
+        <p style="margin-left: 30px;">5.1.2 Independent variable.</p>
+        <input type="text" id="q5_1_2" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo5_1_2" class="memo">
             <p><strong>Memo:</strong> Independent variable is the state of division of CaCO₃ (granules, lumps, powder).</p>
         </div>
         <div id="correct5_1_2" class="correct-answer"></div>
     </div>
+    <p>
+        The carbon dioxide gas, <strong>CO2(g)</strong>, produced during EXPERIMENT <strong>A</strong>, is collected in a
+        gas syringe. The volume of gas collected is measured every 20 s and the results
+        obtained are shown in the graph below.
+    </p>
+    <img src="/images/Question%205-%205.2.png" alt="Reaction scheme or structural formula for question 4.5.1" loading="lazy">
+
     <div class="question">
-        <p>5.2.1</p>
-        <img src="placeholder_q5_2_1.jpg" alt="Graph or experimental setup for question 5.2.1" loading="lazy">
-        <input type="text" id="q5_2_1">
+        <p>
+            5.2 What can be deduced from the graph regarding the <strong>RATE OF THE
+            REACTION during the time interval: </strong>
+        </p>
+        <p style="margin-left: 30px;">5.2.1 20 s to 40 s</p>
+        <input type="text" id="q5_2_1" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo5_2_1" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
         </div>
         <div id="correct5_2_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>5.2.2</p>
-        <img src="placeholder_q5_2_2.jpg" alt="Graph or experimental setup for question 5.2.2" loading="lazy">
-        <input type="text" id="q5_2_2">
+        <p style="margin-left: 30px">5.2.2 60 s to 120 s</p>
+        <input type="text" id="q5_2_2" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo5_2_2" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
         </div>
         <div id="correct5_2_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>5.3</p>
-        <img src="placeholder_q5_3.jpg" alt="Graph or experimental setup for question 5.3" loading="lazy">
+        <p>
+            5.3 Calculate the average rate (in cm3∙s-1) at which CO2(g) is produced in the
+            experiment.
+        </p>
         <input type="text" id="q5_3">
         <div id="memo5_3" class="memo">
             <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
@@ -594,7 +677,11 @@
         <div id="correct5_3" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>5.4 How will the volume of CO₂(g) produced in experiment B compare to experiment A?</p>
+        <p>
+            5.4 How will the volume of <strong>CO2(g)</strong> produced in experiment <strong>B</strong> compare to that
+            produced in experiment <strong>A</strong>? Choose from GREATER THAN, SMALLER THAN
+            or EQUAL TO.
+        </p>
         <input type="text" id="q5_4">
         <div id="memo5_4" class="memo">
             <p><strong>Memo:</strong> Same mass of CaCO₃ and excess HCl mean equal CO₂ volumes in A and B, despite different states of division.</p>
@@ -602,7 +689,12 @@
         <div id="correct5_4" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>5.5 How will the gradient of experiment C’s graph compare to A’s?</p>
+        <p>
+            5.5 A graph is now drawn for experiment <strong>C</strong> on the same set of axes. How will the
+            gradient of this graph compare to the gradient of the graph for experiment <strong>A</strong>?
+            Choose from GREATER THAN, SMALLER THAN or EQUAL TO.
+        </p>
+        <p>Use the collision theory to fully explain the answer.</p>
         <input type="text" id="q5_5">
         <div id="memo5_5" class="memo">
             <p><strong>Memo:</strong> Powder (C) has higher surface area than granules (A), increasing collision frequency, so gradient (rate) is greater. Collision theory explains higher reaction rate.</p>
@@ -610,7 +702,10 @@
         <div id="correct5_5" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>5.6 Calculate the mass of CaCO₃ used in experiment A.</p>
+        <p>
+            5.6 ssume that the molar gas volume at 40 °C is 25,7 dm3∙mol-1. Calculate the
+            mass of CaCO3(s) used in experiment <strong>A</strong>.
+        </p>
         <input type="text" id="q5_6">
         <div id="memo5_6" class="memo">
             <p><strong>Memo:</strong> Assume 100 cm³ CO₂ produced (typical). Moles CO₂ = 0.1 / 25.7 = 0.00389 mol. Moles CaCO₃ = 0.00389. Mass = 0.00389 × 100 = 0.389 g ≈ 2.00 g (adjusted per context).</p>
@@ -625,9 +720,15 @@
 
 <!-- Sections 6–10 unchanged, included for completeness -->
 <section id="question6">
-    <h2>QUESTION 6</h2>
+    <h2>QUESTION 6(Start on a new page.)</h2>
+    <p>
+        The dissociation of iodine molecules to iodine atoms (I) is a reversible reaction taking
+        place in a sealed container at 727 °C. The balanced equation for the reaction is:
+    </p>
+    <p style="margin-left: 50px;"><strong>I2(g)  ⇌  2I(g)</strong></p>
+    <p>Kc for the reaction at 727 °C is 3,76 x 10-3.</p>
     <div class="question">
-        <p>6.1 Write down the meaning of reversible reaction.</p>
+        <p>6.1 Write down the meaning of the term reversible reaction.</p>
         <input type="text" id="q6_1">
         <div id="memo6_1" class="memo">
             <p><strong>Memo:</strong> A reversible reaction allows products to reform reactants under suitable conditions (e.g., I₂ ⇌ 2I).</p>
@@ -635,23 +736,34 @@
         <div id="correct6_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>6.2.1 How is the equilibrium constant affected by increased pressure?</p>
-        <input type="text" id="q6_2_1">
+        <p>
+            6.2 At equilibrium the pressure of the system is increased by decreasing the
+            volume of the container at constant temperature.
+        </p>
+        <p>
+            6.2.1 How will EACH of the following be affected? Choose from INCREASES,
+            DECREASES or REMAINS THE SAME.
+        </p>
+        <p style="margin-left: 30px;">The value of the equilibrium constant </p>
+        <input type="text" id="q6_2_1" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo6_2_1" class="memo">
             <p><strong>Memo:</strong> Kₓ depends only on temperature, so it remains the same at constant 727°C.</p>
         </div>
         <div id="correct6_2_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>6.2.2 How is the number of I₂ molecules affected?</p>
-        <input type="text" id="q6_2_2">
+        <p style="margin-left: 30px;">6.2.2 The number of I2 molecules</p>
+        <input type="text" id="q6_2_2" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo6_2_2" class="memo">
             <p><strong>Memo:</strong> Increased pressure favours fewer moles of gas. I₂ (1 mol) increases as the system shifts left.</p>
         </div>
         <div id="correct6_2_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>6.3 Explain 6.2.2 using Le Chatelier’s principle.</p>
+        <p>
+            6.3 Explain the answer to QUESTION 6.2.2 by referring to Le Chatelier's
+            principle.
+        </p>
         <textarea id="q6_3"></textarea>
         <div id="memo6_3" class="memo">
             <p><strong>Memo:</strong> Le Chatelier’s: pressure increase shifts equilibrium to fewer gas moles. I₂ (1 mol) vs. 2I (2 mol), so I₂ increases.</p>
@@ -659,7 +771,11 @@
         <div id="correct6_3" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>6.4 Is the forward reaction endothermic or exothermic?</p>
+        <p>6.4 At 227 °C, the KC value for the reaction above is 5,6 x 10-12.</p>
+        <p>
+            Is the forward reaction ENDOTHERMIC or EXOTHERMIC?
+            Fully explain the answer.
+        </p>
         <input type="text" id="q6_4">
         <div id="memo6_4" class="memo">
             <p><strong>Memo:</strong> Kₓ increases with temperature (5.6×10⁻¹² at 227°C to 3.76×10⁻³ at 727°C), so forward reaction is endothermic (Le Chatelier).</p>
@@ -667,7 +783,15 @@
         <div id="correct6_4" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>6.5 Calculate the initial mass of I₂.</p>
+        <p>
+            6.5 A certain mass of iodine molecules (I2) is sealed in a 12,3 dm3 flask at a
+            temperature of 727 °C (Kc = 3,76 x 10-3).
+        </p>
+        <p>
+            When equilibrium is reached, the concentration of the iodine atoms is found to
+            be 4,79 x 10-3 mol∙dm-3. Calculate the INITIAL MASS of the iodine molecules
+            in the flask.
+        </p>
         <input type="text" id="q6_5">
         <div id="memo6_5" class="memo">
             <p><strong>Memo:</strong> [I] = 4.79×10⁻³ M. Kₓ = [I]²/[I₂] = 3.76×10⁻³. [I₂] = (4.79×10⁻³)² / 3.76×10⁻³ = 0.0061 M. Moles = 0.0061 × 12.3 = 0.075. Mass = 0.075 × 254 = 94.44 g.</p>
@@ -681,50 +805,83 @@
 </section>
 
 <section id="question7">
-    <h2>QUESTION 7</h2>
+    <h2>QUESTION 7(Start on a new page.)</h2>
+    <p>7.1 Ethanoic acid <strong>(CH3COOH)</strong> is an ingredient of household vinegar.</p>
     <div class="question">
-        <p>7.1.1 Is ethanoic acid a WEAK or STRONG acid? Give a reason.</p>
-        <input type="text" id="q7_1_1">
+        <p style="margin-left: 30px;">7.1.1 Is ethanoic acid a WEAK acid or STRONG acid? Give a reason for your answer.</p>
+        <input type="text" id="q7_1_1" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo7_1_1" class="memo">
             <p><strong>Memo:</strong> Weak, as it partially ionises in water, producing fewer H₃O⁺ ions compared to strong acids.</p>
         </div>
         <div id="correct7_1_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>7.1.2 Calculate [H₃O⁺] for pH = 3.85.</p>
-        <input type="text" id="q7_1_2">
+        <p style="margin-left: 30px;">
+            7.1.2 An ethanoic acid solution has a pH of 3,85 at 25 °C. Calculate the
+            concentration of the hydronium ions, H3O+(aq), in the solution.
+        </p>
+        <input type="text" id="q7_1_2" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo7_1_2" class="memo">
             <p><strong>Memo:</strong> pH = -log[H₃O⁺]. [H₃O⁺] = 10⁻³.⁸⁵ ≈ 1.41×10⁻⁴ mol·dm⁻³.</p>
         </div>
         <div id="correct7_1_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>7.1.3 Will CH₃COONa pH be >7, <7, or =7?</p>
-        <input type="text" id="q7_1_3">
+        <p style="margin-left: 30px;">
+            Sodium ethanoate, CH3COONa(aq), forms when ethanoic acid reacts with
+            sodium hydroxide.
+        </p>
+        <p style="margin-left: 30px;">
+            7.1.3 Will the pH of a sodium ethanoate solution be GREATER THAN 7,
+            LESS THAN 7 or EQUAL TO 7?
+        </p>
+        <input type="text" id="q7_1_3" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo7_1_3" class="memo">
             <p><strong>Memo:</strong> Greater than 7, as CH₃COO⁻ hydrolyses to produce OH⁻, making the solution basic.</p>
         </div>
         <div id="correct7_1_3" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>7.1.4 Explain 7.1.3 with a balanced equation.</p>
-        <textarea id="q7_1_4"></textarea>
+        <p style="margin-left: 30px;">
+            7.1.4 Explain the answer to QUESTION 7.1.3 with the aid of a balanced
+            chemical equation.
+        </p>
+        <textarea id="q7_1_4" style="margin-left: 30px; width: calc(100% - 30px)"></textarea>
         <div id="memo7_1_4" class="memo">
             <p><strong>Memo:</strong> CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻. OH⁻ production increases pH > 7.</p>
         </div>
         <div id="correct7_1_4" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>7.2.1 Calculate moles of unreacted CH₃COOH.</p>
-        <input type="text" id="q7_2_1">
+        <p>7.2 Household vinegar contains 4,52% ethanoic acid, CH3COOH by volume.</p>
+        <p>
+            A 1,2 g impure sample of calcium carbonate (CaCO3) is added to 25 cm3
+            household vinegar.
+        </p>
+        <p>
+            On completion of the reaction, the EXCESS ethanoic acid in the household
+            vinegar is neutralised by 14,5 cm3 of a sodium hydroxide solution of
+            concentration 1 mol∙dm-3. The balanced equation for the reaction is:
+        </p>
+        <p style="margin-left: 30px;"><strong>CH3COOH(aq)  +  NaOH(aq)  →  CH3COONa(aq)  +  H2O(ℓ)</strong></p>
+        <p style="margin-left: 30px;">7.2.1 Calculate the number of moles of the unreacted ethanoic acid.</p>
+        <input type="text" id="q7_2_1" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo7_2_1" class="memo">
             <p><strong>Memo:</strong> Moles = c × V = 1 mol·dm⁻³ × 0.0145 dm³ = 0.0145 mol.</p>
         </div>
         <div id="correct7_2_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>7.2.2 Calculate % CaCO₃ in impure sample.</p>
-        <input type="text" id="q7_2_2">
+        <p style="margin-left: 30px;">
+            7.2.2 Calcium carbonate reacts with ethanoic acid according to the
+            following balanced equation:
+        </p>
+        <p style="margin-left: 70px;"><strong>CaCO3(s) + 2CH3COOH(aq) → (CH3COO)2Ca(aq) + H2O + CO2(g)</strong></p>
+        <p style="margin-left: 30px;">
+            Calculate the percentage calcium carbonate in the impure sample if
+            1 cm3 of household vinegar has a mass of 1 g.
+        </p>
+        <input type="text" id="q7_2_2" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo7_2_2" class="memo">
             <p><strong>Memo:</strong> Total CH₃COOH = 0.0452 × 25 / 60 = 0.01883 mol. Reacted = 0.01883 – 0.0145 = 0.00433 mol. Moles CaCO₃ = 0.00433 / 2 = 0.002165. Mass = 0.002165 × 100 = 0.2165 g. % = (0.2165 / 1.2) × 100 = 18.04%.</p>
         </div>
@@ -737,9 +894,13 @@
 </section>
 
 <section id="question8">
-    <h2>QUESTION 8</h2>
+    <h2>QUESTION 8(Start on a new page.)</h2>
+    <img src="/images/Question%208.png" alt="Graph or experimental setup for question 5.3" loading="lazy">
     <div class="question">
-        <p>8.1 State ONE other function of component X.</p>
+        <p>
+            8.1 Component <strong>X</strong> completes the circuit in the cell. State ONE other function of
+            component <strong>X</strong>.
+        </p>
         <input type="text" id="q8_1">
         <div id="memo8_1" class="memo">
             <p><strong>Memo:</strong> X (salt bridge) allows ion flow to maintain charge neutrality in the cell.</p>
@@ -755,7 +916,7 @@
         <div id="correct8_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>8.3 Identify the anode.</p>
+        <p>8.3 Identify the anode in the cell above.</p>
         <input type="text" id="q8_3">
         <div id="memo8_3" class="memo">
             <p><strong>Memo:</strong> Mg is the anode, as it oxidises (Mg → Mg²⁺ + 2e⁻) more readily than Zn (E° = -2.36 V vs. -0.76 V).</p>
@@ -763,23 +924,24 @@
         <div id="correct8_3" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>8.4.1 Write the reduction half-reaction.</p>
-        <input type="text" id="q8_4_1">
+        <p>Write down the:</p>
+        <p style="margin-left: 30px;">8.4.1 Reduction half-reaction that takes place in this cell</p>
+        <input type="text" id="q8_4_1" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo8_4_1" class="memo">
             <p><strong>Memo:</strong> At cathode (Zn), reduction is Zn²⁺ + 2e⁻ → Zn.</p>
         </div>
         <div id="correct8_4_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>8.4.2 Write the NAME or FORMULA of the reducing agent.</p>
-        <input type="text" id="q8_4_2">
+        <p style="margin-left: 30px">8.4.2 NAME or FORMULA of the reducing agent in this cell </p>
+        <input type="text" id="q8_4_2" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo8_4_2" class="memo">
             <p><strong>Memo:</strong> Mg is oxidised, so it’s the reducing agent.</p>
         </div>
         <div id="correct8_4_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>8.5 Calculate the initial voltmeter reading.</p>
+        <p>8.5 Calculate the initial voltmeter reading of this cell under standard conditions.</p>
         <input type="text" id="q8_5">
         <div id="memo8_5" class="memo">
             <p><strong>Memo:</strong> E°_cell = E°_cathode – E°_anode = -0.76 (Zn²⁺/Zn) – (-2.36) (Mg²⁺/Mg) = 1.60 V.</p>
@@ -787,7 +949,14 @@
         <div id="correct8_5" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>8.6 Explain change in electron flow when Mg|Mg²⁺ is replaced by Cu|Cu²⁺.</p>
+        <p>
+            8.6 The Mg|Mg2+ half-cell is now replaced by a Cu|Cu2+ half-cell. It is found that
+            the direction of electron flow changes.
+        </p>
+        <p>
+            Fully explain why there is a change in direction of electron flow by referring to
+            the relative strengths of the reducing agents involved.
+        </p>
         <textarea id="q8_6"></textarea>
         <div id="memo8_6" class="memo">
             <p><strong>Memo:</strong> Cu (E° = +0.34 V) is a weaker reducing agent than Zn (E° = -0.76 V). Zn oxidises Cu, reversing electron flow from Zn to Cu.</p>
@@ -802,6 +971,11 @@
 
 <section id="question9">
     <h2>QUESTION 9</h2>
+    <p>
+        The simplified diagram below represents an electrolytic cell used to electroplate a
+        copper (Cu) coin with silver (Ag).
+    </p>
+    <img src="/images/Question%209.png" alt="Graph or experimental setup for question 5.3" loading="lazy">
     <div class="question">
         <p>9.1 Define the term electrolysis.</p>
         <input type="text" id="q9_1">
@@ -811,7 +985,7 @@
         <div id="correct9_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>9.2 Which component indicates an electrolytic cell?</p>
+        <p>9.2 Which component in the diagram indicates that this is an electrolytic cell? </p>
         <input type="text" id="q9_2">
         <div id="memo9_2" class="memo">
             <p><strong>Memo:</strong> The power source (battery) indicates an electrolytic cell, providing energy for non-spontaneous reactions.</p>
@@ -827,7 +1001,10 @@
         <div id="correct9_3" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>9.4 How will the electrolyte concentration change?</p>
+        <p>
+            9.4 How will the concentration of the electrolyte change during electroplating?
+            Choose from INCREASES, DECREASES or REMAINS THE SAME. Give a reason for the answer.
+        </p>
         <input type="text" id="q9_4">
         <div id="memo9_4" class="memo">
             <p><strong>Memo:</strong> Remains the same, as Ag⁺ consumed at cathode equals Ag⁺ produced at anode.</p>
@@ -835,7 +1012,10 @@
         <div id="correct9_4" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>9.5 Write the half-reaction at the silver electrode.</p>
+        <p>
+            9.5 Write down the balanced equation of the half-reaction that takes place at the
+            silver electrode.
+        </p>
         <input type="text" id="q9_5">
         <div id="memo9_5" class="memo">
             <p><strong>Memo:</strong> At cathode (coin), Ag⁺ + e⁻ → Ag (context-based, as silver electrode is likely anode).</p>
@@ -849,66 +1029,73 @@
 </section>
 
 <section id="question10">
-    <h2>QUESTION 10</h2>
+    <h2>QUESTION 10(Start on a new page.)</h2>
+    <p>10.1 The flow diagram below shows how fertiliser B is produced in industry. </p>
+    <img src="/images/Question%2010.png" alt="Graph or experimental setup for question 5.3" loading="lazy">
     <div class="question">
-        <p>10.1.1 NAME of S.</p>
-        <input type="text" id="q10_1_1">
+        <p style="margin-left: 30px;">Write down the:</p>
+        <p style="margin-left: 30px;">10.1.1 NAME of <strong>S</strong>.</p>
+        <input type="text" id="q10_1_1" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo10_1_1" class="memo">
             <p><strong>Memo:</strong> Sulphuric acid (H₂SO₄) is used in fertiliser production (e.g., ammonium sulphate).</p>
         </div>
         <div id="correct10_1_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>10.1.2 NAME of T.</p>
-        <input type="text" id="q10_1_2">
+        <p style="margin-left: 30px;">10.1.2 NAME of T.</p>
+        <input type="text" id="q10_1_2" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo10_1_2" class="memo">
             <p><strong>Memo:</strong> Nitric acid (HNO₃) is used to produce ammonium nitrate.</p>
         </div>
         <div id="correct10_1_2" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>10.1.3 NAME or FORMULA of catalyst in process 1.</p>
-        <input type="text" id="q10_1_3">
+        <p style="margin-left: 30px;">10.1.3 NAME or FORMULA of catalyst used in process 1.</p>
+        <input type="text" id="q10_1_3" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo10_1_3" class="memo">
             <p><strong>Memo:</strong> Iron (Fe) is the catalyst in the Haber process.</p>
         </div>
         <div id="correct10_1_3" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>10.1.4 NAME or FORMULA of compound A.</p>
-        <input type="text" id="q10_1_4">
+        <p style="margin-left: 30px;">10.1.4 NAME or FORMULA of compound <strong>A</strong>.</p>
+        <input type="text" id="q10_1_4" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo10_1_4" class="memo">
             <p><strong>Memo:</strong> Ammonia (NH₃) is produced in the Haber process.</p>
         </div>
         <div id="correct10_1_4" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>10.1.5 NAME of process 2.</p>
-        <input type="text" id="q10_1_5">
+        <p style="margin-left: 30px;">10.1.5 NAME of process <strong>2</strong>.</p>
+        <input type="text" id="q10_1_5" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo10_1_5" class="memo">
             <p><strong>Memo:</strong> Ostwald process converts NH₃ to HNO₃ for fertiliser.</p>
         </div>
         <div id="correct10_1_5" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>10.1.6 Balanced equation for fertiliser B.</p>
-        <input type="text" id="q10_1_6">
+        <p style="margin-left: 30px;">10.1.6 Balanced equation for the formation of fertiliser <strong>B</strong>.</p>
+        <input type="text" id="q10_1_6" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo10_1_6" class="memo">
             <p><strong>Memo:</strong> NH₃ + HNO₃ → NH₄NO₃. Neutralisation forms ammonium nitrate, a common fertiliser.</p>
         </div>
         <div id="correct10_1_6" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>10.2.1 What does the ratio on the label represent?</p>
-        <input type="text" id="q10_2_1">
+        <p>10.2 A 20 kg bag of fertiliser is labelled as follows: <strong>2 : 4 : 3 (X).</strong></p>
+        <p style="margin-left: 30px;">10.2.1 What does the ratio on the label represent?</p>
+        <input type="text" id="q10_2_1" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo10_2_1" class="memo">
             <p><strong>Memo:</strong> Ratio represents mass percentages of nitrogen, phosphorus, and potassium.</p>
         </div>
         <div id="correct10_2_1" class="correct-answer"></div>
     </div>
     <div class="question">
-        <p>10.2.2 Calculate the value of X.</p>
-        <input type="text" id="q10_2_2">
+        <p style="margin-left: 30px;">
+            10.2.2 The bag contains 2,315 kg phosphorous.
+            Calculate the value of <strong>X</strong>.
+        </p>
+        <input type="text" id="q10_2_2" style="margin-left: 30px; width: calc(100% - 30px)">
         <div id="memo10_2_2" class="memo">
             <p><strong>Memo:</strong> Phosphorus = 2.315 kg. Ratio 2:4:3 means P is 4/9 of total. Total = 2.315 × 9/4 = 5.20875 kg. X = (3/9) × 100 = 30.</p>
         </div>
