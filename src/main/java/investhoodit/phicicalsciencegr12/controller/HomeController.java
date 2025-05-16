@@ -10,7 +10,7 @@ public class HomeController {
 
     @GetMapping
     public String home() {
-        return "paper-two";
+        return "index";
     }
     @GetMapping("/paper-two")
     public String showPaperTwo() {

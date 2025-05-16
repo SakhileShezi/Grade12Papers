@@ -60,15 +60,17 @@ h4 {
     font-size: 16px;
     margin: 10px 0;
 }
-
 .instructions, .question, .data-sheets {
-    margin: 20px 0;
+    border: 2px solid #000;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .instructions p, .question p, .data-sheets p {
     margin: 10px 0;
 }
-
 .question ol {
     list-style-type: decimal;
     margin-left: 20px;

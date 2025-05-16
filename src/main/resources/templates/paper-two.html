@@ -24,7 +24,51 @@
             margin-right: auto;
             border: 5px solid #007BFF;
         }
+        .paper-nav-btn button {
+            flex: 1;
+            padding: 1rem;
+            font-size: 1rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
 
+        /* Optional: Style for each button */
+        .p1-btn {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+
+        .p2-btn {
+            background-color: #2196F3; /* Blue */
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 15px 0 10px;
+        }
+
+        h4 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
         /* Section styling */
         section {
             border: 2px solid #000;
@@ -83,13 +127,13 @@
         }
 
         input[type="text"].correct, textarea.correct {
-            background-color: #b1edb1;
-            border: 2px solid #00ff00;
+            background-color: #d4edda;
+            border: 2px solid #28a745;
         }
 
         input[type="text"].incorrect, textarea.incorrect {
-            background-color: #f58787;
-            border: 2px solid #ff0000;
+            background-color: #f8d7da;
+            border: 2px solid #dc3545;
         }
 
         label {
@@ -106,17 +150,18 @@
 
         /* Button styling */
         button {
+            background: #007BFF;
+            color: #FFFFFF;
             padding: 8px 16px;
-            font-size: 16px;
+            border: none;
             cursor: pointer;
-            border: 1px solid #000;
-            border-radius: 3px;
-            background-color: #007BFF;
+            margin: 10px 0;
+            display: inline-block;
             transition: background-color 0.2s;
         }
 
         button:hover {
-            background-color: #5999dc;
+            background-color: #0056b3;
         }
 
         button:focus {
@@ -216,26 +261,30 @@
     </style>
 </head>
 <body>
-<h1>NATIONAL SENIOR CERTIFICATE<br>GRADE 12<br>PHYSICAL SCIENCES: CHEMISTRY (P2)<br>NOVEMBER 2020</h1>
-
-<section id="instructions">
-    <h2>INSTRUCTIONS AND INFORMATION</h2>
-    <ol>
-        <li>Write your centre number and examination number in the appropriate spaces on the ANSWER BOOK.</li>
-        <li>This question paper consists of 10 questions. Answer ALL the questions in the ANSWER BOOK.</li>
-        <li>Start EACH question on a NEW page in the ANSWER BOOK.</li>
-        <li>Number the answers correctly according to the numbering system used in this question paper.</li>
-        <li>Leave ONE line between two subquestions, for example between QUESTION 2.1 and QUESTION 2.2.</li>
-        <li>You may use a non-programmable calculator.</li>
-        <li>You may use appropriate mathematical instruments.</li>
-        <li>You are advised to use the attached DATA SHEETS.</li>
-        <li>Show ALL formulae and substitutions in ALL calculations.</li>
-        <li>Round off your final numerical answers to a minimum of TWO decimal places.</li>
-        <li>Give brief motivations, discussions, et cetera where required.</li>
-        <li>Write neatly and legibly.</li>
-    </ol>
+<header>
+    <div class="paper-nav-btn">
+        <button class="p1-btn" onclick="location.href='/'">Physical Sciences Paper 1</button><button class="p2-btn" onclick="location.href='/paper-two'">Physical Sciences Paper 2</button>
+    </div>
+    <h1>NATIONAL SENIOR CERTIFICATE GRADE 12</h1>
+    <h2>PHYSICAL SCIENCES: CHEMISTRY (P2)</h2>
+    <p>NOVEMBER 2020</p>
+    <p>Marks: 150 | Time: 3 hours</p>
+</header>
+<section class="instructions">
+    <h3>Instructions and Information</h3>
+    <p>Write your centre number and examination number in the appropriate spaces on the ANSWER BOOK.</p>
+    <p>This question paper consists of TEN questions. Answer ALL the questions in the ANSWER BOOK.</p>
+    <p>Start EACH question on a NEW page in the ANSWER BOOK.</p>
+    <p>Number the answers correctly according to the numbering system used in this question paper.</p>
+    <p>Leave ONE line between two subquestions, e.g. between QUESTION 2.1 and QUESTION 2.2.</p>
+    <p>You may use a non-programmable calculator.</p>
+    <p>You may use appropriate mathematical instruments.</p>
+    <p>Show ALL formulae and substitutions in ALL calculations.</p>
+    <p>Round off your final numerical answers to a minimum of TWO decimal places.</p>
+    <p>Give brief motivations, discussions etc. where required.</p>
+    <p>You are advised to use the attached DATA SHEETS.</p>
+    <p>Write neatly and legibly.</p>
 </section>
-
 <section id="question1">
     <h2>QUESTION 1: MULTIPLE-CHOICE QUESTIONS</h2>
     <div class="question">
@@ -245,7 +294,7 @@
         <label><input type="radio" name="q1_1" id="q1_1_C" value="C"> C. CₙH₂ₙ₊₂</label><br>
         <label><input type="radio" name="q1_1" id="q1_1_D" value="D"> D. CₙH₂ₙ₊₂O</label>
         <div id="memo1_1" class="memo">
-            <p><strong>Memo:</strong> Alkanes are saturated hydrocarbons with single bonds, following the general formula CₙH₂ₙ₊₂ (e.g., methane: CH₄, n=1; ethane: C₂H₆, n=2). A is for alkenes, B for alkynes, D is incorrect.</p>
+            <p><strong>Memo:</strong>  correct answer : C</p>
         </div>
         <div id="correct1_1" class="correct-answer"></div>
     </div>
@@ -256,7 +305,7 @@
         <label><input type="radio" name="q1_2" id="q1_2_C" value="C"> C. C₆H₁₂O₂</label><br>
         <label><input type="radio" name="q1_2" id="q1_2_D" value="D"> D. C₃H₆O</label>
         <div id="memo1_2" class="memo">
-            <p><strong>Memo:</strong> Hexanoic acid (C₅H₁₁COOH) has a molecular formula of C₆H₁₂O₂. The empirical formula is the simplest ratio, which is C₃H₆O₂ after dividing by 2. Options B, C, D are incorrect ratios.</p>
+            <p><strong>Memo:</strong> correct answer : D</p>
         </div>
         <div id="correct1_2" class="correct-answer"></div>
     </div>
@@ -268,7 +317,7 @@
         <label><input type="radio" name="q1_3" id="q1_3_C" value="C"> C.</label><br>
         <label><input type="radio" name="q1_3" id="q1_3_D" value="D"> D.</label>
         <div id="memo1_3" class="memo">
-            <p><strong>Memo:</strong> Image-dependent. Methyl ethanoate (CH₃COOCH₃) has a carbonyl (C=O) bonded to a methoxy group. Verify the structural formula in the diagram.</p>
+            <p><strong>Memo:</strong> Correct answer : C</p>
         </div>
         <div id="correct1_3" class="correct-answer"></div>
     </div>
@@ -286,7 +335,7 @@
         <label><input type="radio" name="q1_4" id="q1_4_C" value="C"> C. 200 cm³, 0.1 mol·dm⁻³</label><br>
         <label><input type="radio" name="q1_4" id="q1_4_D" value="D"> D. 200 cm³, 0.5 mol·dm⁻³</label>
         <div id="memo1_4" class="memo">
-            <p><strong>Memo:</strong> Reaction rate depends on HCl concentration (collision theory). Option B has the highest concentration (1.0 mol·dm⁻³), giving the highest initial rate. Volume is sufficient in all cases.</p>
+            <p><strong>Memo:</strong> Correct answer : B</p>
         </div>
         <div id="correct1_4" class="correct-answer"></div>
     </div>
@@ -297,7 +346,7 @@
         <label><input type="radio" name="q1_5" id="q1_5_C" value="C"> C. heat of reaction</label><br>
         <label><input type="radio" name="q1_5" id="q1_5_D" value="D"> D. rate of reaction</label>
         <div id="memo1_5" class="memo">
-            <p><strong>Memo:</strong> A catalyst lowers activation energy, increasing the rate of reaction (D). It doesn’t affect yield (A), raises activation energy (B), or change heat of reaction (C).</p>
+            <p><strong>Memo:</strong>  Correct answer : D</p>
         </div>
         <div id="correct1_5" class="correct-answer"></div>
     </div>
@@ -315,7 +364,7 @@
         <label><input type="radio" name="q1_6" id="q1_6_C" value="C"> C</label><br>
         <label><input type="radio" name="q1_6" id="q1_6_D" value="D"> D</label>
         <div id="memo1_6" class="memo">
-            <p><strong>Memo:</strong> Exothermic (ΔH < 0), so decreasing T favours forward reaction. Decreasing pH (more H⁺) shifts equilibrium right (Le Chatelier). Option B is correct.</p>
+            <p><strong>Memo:</strong> Correct answer : B</p>
         </div>
         <div id="correct1_6" class="correct-answer"></div>
     </div>
@@ -326,7 +375,7 @@
         <label><input type="radio" name="q1_7" id="q1_7_C" value="C"> C. H₂PO₄⁻</label><br>
         <label><input type="radio" name="q1_7" id="q1_7_D" value="D"> D. H₃PO₄</label>
         <div id="memo1_7" class="memo">
-            <p><strong>Memo:</strong> Conjugate base forms by losing H⁺. HPO₄²⁻ → PO₄³⁻ + H⁺, so PO₄³⁻ (B) is the conjugate base. Others are incorrect.</p>
+            <p><strong>Memo:</strong> Correct answer : B</p>
         </div>
         <div id="correct1_7" class="correct-answer"></div>
     </div>
@@ -338,7 +387,7 @@
         <label><input type="radio" name="q1_8" id="q1_8_C" value="C"> C. 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂</label><br>
         <label><input type="radio" name="q1_8" id="q1_8_D" value="D"> D. 2Cu⁺ + Pb²⁺ → 2Cu²⁺ + Pb</label>
         <div id="memo1_8" class="memo">
-            <p><strong>Memo:</strong> Spontaneous if E°_cell > 0. For C: Fe³⁺/Fe²⁺ (E° = +0.77 V), I₂/I⁻ (E° = +0.54 V). E°_cell = 0.77 – 0.54 = +0.23 V. Others yield negative E°_cell.</p>
+            <p><strong>Memo:</strong> Correct answer : C</p>
         </div>
         <div id="correct1_8" class="correct-answer"></div>
     </div>
@@ -358,7 +407,7 @@
         <label><input type="radio" name="q1_9" id="q1_9_C" value="C"> C. </label><br>
         <label><input type="radio" name="q1_9" id="q1_9_D" value="D"> D. </label>
         <div id="memo1_9" class="memo">
-            <p><strong>Memo:</strong> Image-dependent. In copper purification, anode (impure Cu) loses mass, cathode (pure Cu) gains mass. Check graph for opposite trends.</p>
+            <p><strong>Memo:</strong> Correct answer : A</p>
         </div>
         <div id="correct1_9" class="correct-answer"></div>
     </div>
@@ -369,7 +418,7 @@
         <label><input type="radio" name="q1_10" id="q1_10_C" value="C"> C. increase in plant nutrients</label><br>
         <label><input type="radio" name="q1_10" id="q1_10_D" value="D"> D. depletion of oxygen</label>
         <div id="memo1_10" class="memo">
-            <p><strong>Memo:</strong> Eutrophication is caused by an increase in plant nutrients (C), leading to algal blooms, oxygen depletion. A and D are effects, B is unrelated.</p>
+            <p><strong>Memo:</strong>  Correct answer : C</p>
         </div>
         <div id="correct1_10" class="correct-answer"></div>
     </div>
@@ -389,7 +438,7 @@
         <p style="margin-left: 30px;">2.1.1 Hommologous series to which it belongs</p>
         <input type="text" id="q2_1_1" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo2_1_1" class="memo">
-            <p><strong>Memo:</strong> Image-dependent. Please provide the table or diagram to verify the answer.</p>
+            <p><strong>Memo:</strong> Ketones/Ketone</p>
         </div>
         <div id="correct2_1_1" class="correct-answer"></div>
     </div>
@@ -397,7 +446,7 @@
         <p style="margin-left: 30px;" >2.1.2   IUPAC name of a FUNTIONAL ISOMER</p>
         <input  type="text" id="q2_1_2" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo2_1_2" class="memo">
-            <p><strong>Memo:</strong> Image-dependent. Please provide the table or diagram to verify the answer.</p>
+            <p><strong>Memo:</strong> Pentanal/Pentanaal </p>
         </div>
         <div id="correct2_1_2" class="correct-answer"></div>
     </div>
@@ -406,7 +455,7 @@
         <p style="margin-left: 30px;" >2.2.1 IUPAC name of compound <strong>A</strong></p>
         <input type="text" id="q2_1_3" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo2_1_3" class="memo">
-            <p><strong>Memo:</strong> Image-dependent. Please provide the table or diagram to verify the answer.</p>
+            <p><strong>Memo:</strong> 5 – bromo-2,3 – dimethylhexane/5 – bromo-2,3 – dimetielheksaan</p>
         </div>
         <div id="correct2_1_3" class="correct-answer"></div>
     </div>
@@ -464,7 +513,10 @@
         <p>3.1 Define the term boiling point.</p>
         <input type="text" id="q3_1">
         <div id="memo3_1" class="memo">
-            <p><strong>Memo:</strong> Boiling point is the temperature at which a liquid’s vapour pressure equals atmospheric pressure, causing it to change to a gas.</p>
+            <p>
+                <strong>Memo:</strong> The temperature at which the vapour pressure equals atmospheric (external)
+                pressure
+            </p>
         </div>
         <div id="correct3_1" class="correct-answer"></div>
     </div>
@@ -483,7 +535,13 @@
         </p>
         <textarea id="q3_3"></textarea>
         <div id="memo3_3" class="memo">
-            <p><strong>Memo:</strong> As carbon atoms increase, molecular mass rises, enhancing London forces. More energy is needed to break these forces, increasing boiling point.</p>
+            <p>
+                <strong>Memo:</strong> Increase in the number of C-atoms increases molecular mass/size/chain
+                length/surface area.
+                Strength of the intermolecular forces increases/More sites for London
+                forces.
+                More energy is needed to overcome/break intermolecular forces.
+            </p>
         </div>
         <div id="correct3_3" class="correct-answer"></div>
     </div>
@@ -492,7 +550,7 @@
         <p style="margin-left: 30px;">3.4.1 Compounds with London forces only</p>
         <input type="text" id="q3_4_1" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo3_4_1" class="memo">
-            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+            <p><strong>Memo:</strong> Correct answer : C</p>
         </div>
         <div id="correct3_4_1" class="correct-answer"></div>
     </div>
@@ -500,7 +558,10 @@
         <p style="margin-left: 30px;">The aldehydes, Explain your answer.</p>
         <input type="text" id="q3_4_2" style="margin-left: 30px; width: calc(100% - 30px);">
         <div id="memo3_4_2" class="memo">
-            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+            <p><strong>Memo:</strong> Correct answer : B ,Compare strength of intermolecular forces of A, B and C.
+                 Compare boiling points/energy required to overcome intermolecular forces  of
+                alcohols/A and aldehydes/B.
+            </p>
         </div>
         <div id="correct3_4_2" class="correct-answer"></div>
     </div>
@@ -511,7 +572,7 @@
         </p>
         <input type="text" id="q3_5">
         <div id="memo3_5" class="memo">
-            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+            <p><strong>Memo:</strong> Butanal</p>
         </div>
         <div id="correct3_5" class="correct-answer"></div>
     </div>
@@ -522,7 +583,7 @@
         </p>
         <input type="text" id="q3_6">
         <div id="memo3_6" class="memo">
-            <p><strong>Memo:</strong> Image-dependent. Please provide the diagram or context to verify the answer.</p>
+            <p><strong>Memo:</strong> Pentan-1-ol</p>
         </div>
         <div id="correct3_6" class="correct-answer"></div>
     </div>
